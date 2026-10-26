@@ -1,0 +1,19 @@
+{
+  "request": {
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Hello.",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "I am from your bank security department about a suspicious loan.",
+        "t": 4.0
+      }
+    ]
+  },
+  "content": "{\"signals\": [{\"tactic\": \"impersonation_bank\", \"quote\": \"I am from your bank security department\", \"explanation\": \"Claims to represent a bank.\"}]}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

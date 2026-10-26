@@ -1,0 +1,20 @@
+{
+  "request": {
+    "query": "oszustwo metodą na policjanta CBŚP policja ostrzega",
+    "include_domains": [
+      "cbzc.policja.gov.pl",
+      "cert.pl",
+      "europol.europa.eu",
+      "gov.pl",
+      "knf.gov.pl",
+      "policja.pl",
+      "uokik.gov.pl",
+      "zbp.pl"
+    ],
+    "max_results": 5,
+    "search_depth": "basic"
+  },
+  "content": "{\"answer\":null,\"follow_up_questions\":null,\"images\":[],\"query\":\"oszustwo metodą na policjanta CBŚP policja ostrzega\",\"request_id\":\"f4913b35-d6ef-4de7-a95c-d9b15a5abad5\",\"response_time\":2.42,\"results\":[{\"content\":\"Policjanci ostrzegają przed oszustami działającymi metodą na „Policjanta CBŚ”. ... Policja nigdy nie poprosi o przekazanie komuś pieniędzy, czy też\",\"id\":\"fa874a-00\",\"raw_content\":null,\"score\":0.8872928,\"title\":\"Oszustwa na \\\"Policjanta CBŚP\\\". APELUJEMY i ...\",\"url\":\"https://leczyca.policja.gov.pl/ele/informacje/94269,Oszustwa-na-quotPolicjanta-CBSPquot-APELUJEMY-i-OSTRZEGAMY.html\"},{\"content\":\"Oszust działał metodą \\\"na funkcjonariusza CBŚ\\\", przed którą Policja wielokrotnie ostrzegała. Zazwyczaj sprawca posługuje się tym samym schematem. Dzwoni na\",\"id\":\"503ec1-01\",\"raw_content\":null,\"score\":0.82761955,\"title\":\"Podawali się za oficerów CBŚP i oszukiwali seniorów\",\"url\":\"https://policja.pl/pol/aktualnosci/121167,Podawali-sie-za-oficerow-CBSP-i-oszukiwali-seniorow.html\"},{\"content\":\"Do mieszkańców Ełku dzwonili fałszywi funkcjonariusze ostrzegając przed hakerami, którzy rzekomo włamują się na konta. Jedna z osób uwierzyła w historię\",\"id\":\"e7ec1f-02\",\"raw_content\":null,\"score\":0.6783488,\"title\":\"Próby oszustw na funkcjonariusza CBŚP\",\"url\":\"https://warminsko-mazurska.policja.gov.pl/ol/aktualnosci/80475,Proby-oszustw-na-funkcjonariusza-CBSP.html\"},{\"content\":\"Sprawcy podający się za oficerów CBŚ wyłudzili od 83-latki pieniądze. Kobieta przekonana, że pomaga w policyjnej akcji przekazała oszustom 70 tys. złotych.\",\"id\":\"fd4f02-03\",\"raw_content\":null,\"score\":0.6216563,\"title\":\"Zatrzymani za oszustwa metodą ,,na policjanta CBŚP”\",\"url\":\"https://policja.pl/pol/aktualnosci/130622,Zatrzymani-za-oszustwa-metoda-na-policjanta-CBSP.html\"},{\"content\":\"Policjanci z Mokotowa zatrzymali na gorącym uczynku Michała P. lat 17 oraz Oskara S. lat 15 którzy chcieli oszukać straszą kobietę metodą „na wnuczka i\",\"id\":\"2442b2-04\",\"raw_content\":null,\"score\":0.529045,\"title\":\"ARESZT ZA OSZUSTWO METODĄ NA \\\"POLICJANTA\\\"\",\"url\":\"https://mokotow.policja.gov.pl/r2/aktualnosci/72738,ARESZT-ZA-OSZUSTWO-METODA-NA-quotPOLICJANTAquot.html\"}]}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

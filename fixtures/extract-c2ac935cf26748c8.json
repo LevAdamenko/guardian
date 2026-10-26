@@ -1,0 +1,19 @@
+{
+  "request": {
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Hello?",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Grandma, please do not worry, this is about your grandson Marek.",
+        "t": 4.0
+      }
+    ]
+  },
+  "content": "{\"signals\": [{\"tactic\": \"impersonation_family\", \"quote\": \"this is about your grandson Marek\", \"explanation\": \"References a family member to establish credibility and manipulate emotions.\"}]}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

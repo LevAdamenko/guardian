@@ -1,0 +1,111 @@
+{
+  "request": {
+    "verdict": {
+      "level": "SCAM",
+      "score": 14,
+      "signals": [
+        {
+          "tactic": "impersonation_bank",
+          "quote": "I am from your bank",
+          "explanation": "Claims to represent a bank.",
+          "turn_index": 1
+        },
+        {
+          "tactic": "remote_access_install",
+          "quote": "Install AnyDesk now so our technician can secure your account",
+          "explanation": "Requests installation of remote-access software.",
+          "turn_index": 3
+        },
+        {
+          "tactic": "urgency_pressure",
+          "quote": "Please act immediately",
+          "explanation": "Pressures the person to act immediately.",
+          "turn_index": 5
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://monki.policja.gov.pl/p10/aktualnosci/106311,POLICJA-OSTRZEGA-OSZUSTWO-METODA-NA-POLICJANTA-WNUCZKA-PRACOWNIKA-BANKU.html",
+          "title": "POLICJA OSTRZEGA! OSZUSTWO METODĄ NA POLICJANTA, WNUCZKA, PRACOWNIKA BANKU !!!!! - Aktualności KPP Mońki",
+          "snippet": "Powrót \"Powrót\")\n\nDrukuj \"Drukuj\")\n\nBĄDŹMY OSTROŻNI - APELUJEMY O STOSOWANIE ZASADY OGRANICZONEGO ZAUFANIA – W PRZYPADKU PODEJRZEŃ, ŻE MAMY DO CZYNIENIA Z OSZUSTEM DZWOŃMY NA POLICJĘ\n\n policjant, starsza kobieta, oszust\n\nPomimo licznych apeli policji i kampanii społecznych, nie udaje się uniknąć oszustw metodą na ,,policjanta”, ,, pracownika banku''  czy  ,, wnuczka’’. Pamiętajmy, że policja nie ma prawa żądać od nas pieniędzy, jeżeli to robi to znak, że mamy do czynienia z oszustami. [...] Chwilę po zakończeniu pierwszej rozmowy do ofiary dzwoni kolejna - podając się za funkcjonariusza CBŚ lub Policji. Na ogół przestępca informuje rozmówcę o tym, że jest potencjalną ofiarą oszustwa. Mówi, że poprzednia rozmowa telefoniczna była próbą wyłudzenia pieniędzy. Informuje o tym, że oszust został namierzony. Nalega, aby osoba pokrzywdzona wypłaciła określoną sumę pieniędzy z banku i przekazała ją wyznaczonej osobie lub prosi o wykonanie przelewu bankowego na wskazany numer konta. [...] Sprawcy oszustw wywierają na ofiarach presję czasu. Nie dają chwili na zastanowienie się, czy sprawdzenie informacji o dzwoniącym. Przekonują starsze osoby, że ich pieniądze pomogą w schwytaniu przestępców. Mówią, że gotówka przechowywana na koncie nie jest bezpieczna, a oszust ma do nich łatwy dostęp. Przestępcy podając się za funkcjonariuszy, grożą konsekwencjami prawnymi, jeżeli ich rozmówca nie będzie współpracował.",
+          "domain": "monki.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://warminsko-mazurska.policja.gov.pl/ol/aktualnosci/85846,Oszust-podszyl-sie-pod-pracownika-dzialu-bezpieczenstwa-banku-Naklonil-do-wplaty.html",
+          "title": "Oszust podszył się pod pracownika działu bezpieczeństwa ...",
+          "snippet": "Oszust podszył się pod pracownika działu bezpieczeństwa banku. Nakłonił do wpłaty pieniędzy na wskazane konto. Pokrzywdzona elblążanka straciła 30 tysięcy",
+          "domain": "warminsko-mazurska.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://cieszyn.policja.gov.pl/ka6/prewencja/akcje-i-kampanie-s/pro/344482,Oszustwo-quotna-pracownika-bankuquot-pokrzywdzeni-stracili-wszystkie-oszczednosc.html",
+          "title": "Oszustwo \"na pracownika banku\"- pokrzywdzeni stracili ...",
+          "snippet": "Policjanci przypominają i ostrzegają: - pracownicy banku nigdy nie proszą o podanie loginu i hasła do konta, a tym bardziej kodu autoryzacyjnego SMS lub BLIK; -",
+          "domain": "cieszyn.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://cieszyn.policja.gov.pl/ka6/informacje/wiadomosci/350621,Oszukana-metoda-na-pracownika-banku-stracila-ponad-90-tysiecy-zlotych.html",
+          "title": "Oszukana metodą „na pracownika banku” straciła ponad 90 ...",
+          "snippet": "Policjanci przypominają i ostrzegają: - pracownicy banku nigdy nie proszą o podanie loginu i hasła do konta, a tym bardziej kodu autoryzacyjnego SMS lub BLIK;",
+          "domain": "cieszyn.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://radomsko.policja.gov.pl/era/informacje/60271,Seniorze-nie-daj-sie-oszukac.html",
+          "title": "Seniorze - nie daj się oszukać! - Informacje",
+          "snippet": "Nigdy nie ulegaj presji czasu wywieranej przez oszustów. Pamiętaj: Policja nigdy nie prowadzi działań operacyjnych przez telefon! Policja nigdy nie wymaga",
+          "domain": "radomsko.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://malopolska.policja.gov.pl/krk/aktualnosci/aktualnosci/54555,SENIORZE-NIE-DAJ-SIE-OSZUKAC-Porady-Prewencyjne.html",
+          "title": "SENIORZE- NIE DAJ SIĘ OSZUKAĆ! Porady Prewencyjne.",
+          "snippet": "1. Nie działaj pod presją czasu. Oszuści celowo wywierają presję, by nie dać czasu na zastanowienie. · 2. Sprawdź kto dzwoni. · 3. Nie przekazuj",
+          "domain": "malopolska.policja.gov.pl",
+          "seeded": false
+        }
+      ],
+      "warning": "",
+      "relative_alert": "",
+      "safe_action": "",
+      "advice_source": "fallback"
+    },
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Hello.",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "I am from your bank security department about a suspicious loan.",
+        "t": 4.0
+      },
+      {
+        "speaker": "elder",
+        "text": "I did not request a loan.",
+        "t": 8.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Install AnyDesk now so our technician can secure your account.",
+        "t": 13.0
+      },
+      {
+        "speaker": "elder",
+        "text": "Why do I need that?",
+        "t": 18.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Please act immediately or the loan will be approved.",
+        "t": 22.0
+      }
+    ]
+  },
+  "content": "{\"warning\": \"This call pretends to be your bank and asks you to install remote software—it's a scam.\", \"relative_alert\": \"Alert them that the caller impersonated a bank, requested remote‑access software, and used urgency pressure.\", \"safe_action\": \"Hang up, do not install AnyDesk, and call your bank using a known number to verify.\"}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

@@ -1,0 +1,14 @@
+{
+  "request": {
+    "transcript": [
+      {
+        "speaker": "caller",
+        "text": "InPost: your parcel is waiting in locker KRA01M until Friday. Pickup code: 482915.",
+        "t": 0.0
+      }
+    ]
+  },
+  "content": "{\"signals\": []}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

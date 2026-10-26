@@ -1,0 +1,131 @@
+{
+  "request": {
+    "verdict": {
+      "level": "SCAM",
+      "score": 19,
+      "signals": [
+        {
+          "tactic": "impersonation_authority",
+          "quote": "I am his lawyer",
+          "explanation": "Claims to be a lawyer, presenting themselves as an authority figure.",
+          "turn_index": 5
+        },
+        {
+          "tactic": "urgency_pressure",
+          "quote": "needs help immediately",
+          "explanation": "States the grandson needs help immediately, creating pressure to act quickly.",
+          "turn_index": 3
+        },
+        {
+          "tactic": "money_transfer_request",
+          "quote": "A courier will collect 8,000 zloty in cash for the hospital today",
+          "explanation": "Requests money to be collected for the hospital.",
+          "turn_index": 5
+        },
+        {
+          "tactic": "cash_handover_courier",
+          "quote": "A courier will collect 8,000 zloty in cash for the hospital today",
+          "explanation": "Asks for cash to be handed over to a courier.",
+          "turn_index": 5
+        }
+      ],
+      "sources": [
+        {
+          "url": "http://www.policja.pl/pol/aktualnosci/276027,Falszywy-kurier-policyjny-zatrzymany-Kryminalni-odzyskali-57-tys-zl-i-udaremnili.html",
+          "title": "Fałszywy kurier policyjny zatrzymany. Kryminalni odzyskali 57 tys. zł i udaremnili kolejne oszustwa - Policja.pl - Portal polskiej Policji",
+          "snippet": "Title: Fałszywy kurier policyjny zatrzymany. Kryminalni odzyskali 57 tys. zł i udaremnili kolejne oszustwa - Policja.pl - Portal polskiej Policji\nzł i udaremnili kolejne oszustwa - AktualnościPolicja.pl**. zł i udaremnili kolejne oszustwa. **Policjanci Wydziału Kryminalnego Komendy Miejskiej Policji w Poznaniu oraz funkcjonariusze z Komisariatu Policji Poznań–Grunwald zatrzymali 63-letniego mężczyznę podejrzanego o udział w oszustwach metodą „na wypadek”. odbieraka - osoby, która bezpośrednio odbierała pieniądze od pokrzywdzonych seniorów. na terenie poznańskiej Wildy oraz Grunwaldu. Schemat działania był identyczny i opierał się na dobrze znanej, lecz wciąż skutecznej metodzie „na wypadek”. Do niczego niepodejrzewających seniorów dzwoniła osoba podająca się najpierw za policjanta, a następnie za prokuratora. W rozmowie informowano, że bliska osoba, najczęściej córka, syn lub wnuk, spowodowała poważny wypadek drogowy. Aby uniknąć jej tymczasowego aresztowania lub surowych konsekwencji prawnych, konieczne było natychmiastowe przekazanie wysokiej kwoty pieniędzy jako tzw. W wyniku działania przestępców 85-letnia mieszkanka Wildy przekazała 27 tysięcy złotych, a 83-letni mieszkaniec Grunwaldu - 30 tysięcy złotych. Pieniądze odebrał mężczyzna pełniący rolę tzw. odbieraka, czyli osoby odpowiedzialnej za fizyczne przejęcie gotówki od pokrzywdzonych i przekazanie jej dalej w strukturze przestępczej. Po uzyskanej informacji o tych zdarzeniach do pracy przystąpili policjanci zajmujący się zwalczaniem oszustw. Ich szybkie i zdecydowane działania, w tym analiza operacyjna zebranych informacji, przyniosły efekty już po kilku godzinach. Funkcjonariusze namierzyli podejrzewanego i zatrzymali go w jednym z mieszkań pod Jarocinem. 63-latek był wyraźnie zaskoczony widokiem policjantów. To jednak nie był koniec działań. Dzięki zaangażowaniu śledczych z Komisariatu Policji Poznań - Grunwald oraz kryminalnych z poznańskiej komendy miejskiej, funkcjonariusze ustalili również miejsce ukrycia skradzionej gotówki. Policjanci odzyskali pełną kwotę - 57 tysięcy złotych, które wrócą do pokrzywdzonych seniorów. Zatrzymanemu mężczyźnie przedstawiono dwa zarzuty udziału w oszustwie. Oszustwo opiera się na silnych emocjach - strachu, presji czasu i trosce o najbliższych. Sprawcy celowo nie dają ofierze czasu na weryfikację informacji, nakazując zachowanie całej sprawy w tajemnicy. W dalszej części rozmowy informują, że po pieniądze zgłosi się „zaufany kurier policyjny”. Policja po raz kolejny apeluje o zachowanie szczególnej ostrożności w kontaktach telefonicznych z nieznajomymi. Funkcjonariusze nigdy nie informują o prowadzonych działaniach telefonicznie ani nie żądają przekazania pieniędzy. Nie istnieje żadna procedura wymagająca wpłaty „kaucji” za bliską osobę poprzez przekazanie gotówki kurierowi. W przypadku otrzymania takiego telefonu należy:. Zabezpieczone telefony komórkowe oraz pieniądze. ## Na skróty. ## Mapa serwisu. ## Redakcja serwisu.",
+          "domain": "www.policja.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://policja.pl/pol/aktualnosci/274466,Kolejne-uderzenie-w-grupe-przestepcza-okradajaca-seniorow.html",
+          "title": "Kolejne uderzenie w grupę przestępczą okradającą seniorów - Policja.pl - Portal polskiej Policji",
+          "snippet": "Title: Kolejne uderzenie w grupę przestępczą okradającą seniorów - Policja.pl - Portal polskiej Policji\n# **Kolejne uderzenie w grupę przestępczą okradającą seniorów - AktualnościPolicja.pl**. ## Wyszukiwarka. ## Aktualności. ## Kolejne uderzenie w grupę przestępczą okradającą seniorów. **Rybniccy kryminalni zatrzymali kolejne dwie osoby powiązane ze zorganizowaną grupą przestępczą, która zajmowała się oszustwami metodą „na wypadek” oraz „na policjanta”. W ręce mundurowych wpadł „kurier” przewożący pieniądze oraz „koordynator” grupy. Podczas działań śledczy zabezpieczyli pochodzące z przestępstw ćwierć miliona złotych w gotówce.**. Działania rybnickich policjantów z wydziału kryminalnego doprowadziły do rozbicia kolejnych struktur zorganizowanej grupy przestępczej, zajmującej się oszukiwaniem starszych osób. Policjanci, prowadzący wielowątkowe śledztwo zatrzymali dwóch mężczyzn w wieku 65 i 26 lat. Z ustaleń śledczych wynika, że starszy z zatrzymanych zajmował się odbieraniem gotówki od oszukanych osób, natomiast młodszy odpowiadał za koordynację działań innych członków grupy. Podczas przeszukań policjanci zabezpieczyli dowody przestępczej działalności - w tym wyłudzoną gotówkę, również w obcych walutach, w łącznej wysokości około 250 tysięcy złotych. Zatrzymani usłyszeli już zarzuty udziału w zorganizowanej grupie przestępczej oraz oszustw, za co grozi im kara do 8 lat więzienia. Wobec podejrzanych zastosowano środek zapobiegawczy w postaci tymczasowego aresztowania. W tej sprawie śledczy zatrzymali już łącznie 4 osoby - wcześniej dwóch obywateli Ukrainy w wieku 21 i 26. Sprawa ma charakter rozwojowy, a stróże prawa nie wykluczają kolejnych zatrzymań. Oszuści, przedstawiając różne wymyślone historie, wykorzystują zaufanie i empatię szczególnie osób starszych. Pamiętajmy, że prawdziwi policjanci nigdy nie informują telefonicznie o prowadzonych czynnościach, nie proszą o przekazanie pieniędzy, ani o udział w akcjach policyjnych polegających na wypłacie gotówki z konta. W razie odebrania podejrzanego połączenia telefonicznego, podczas którego ktoś nakłania nas do przekazania pieniędzy lub danych umożliwiających dostęp do konta bankowego, należy natychmiast rozłączyć się i zadzwonić na numer alarmowy 112. Pieniądze, które zostały zabezpieczone przez mundurowych. Gotówka, która została odzyskana przez policjantów. ## Na skróty. ## Kategorie. ## Mapa serwisu. ## Policja online. ## Biuletyn Informacji Publicznej. ## Redakcja serwisu. ## Dostępność. ## Nota prawna. ## Inne wersje portalu.",
+          "domain": "policja.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://leczyca.policja.gov.pl/ele/informacje/94269,Oszustwa-na-quotPolicjanta-CBSPquot-APELUJEMY-i-OSTRZEGAMY.html",
+          "title": "Oszustwa na \"Policjanta CBŚP\". APELUJEMY i ...",
+          "snippet": "Policjanci ostrzegają przed oszustami działającymi metodą na „Policjanta CBŚ”. ... Policja nigdy nie poprosi o przekazanie komuś pieniędzy, czy też",
+          "domain": "leczyca.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://policja.pl/pol/aktualnosci/121167,Podawali-sie-za-oficerow-CBSP-i-oszukiwali-seniorow.html",
+          "title": "Podawali się za oficerów CBŚP i oszukiwali seniorów",
+          "snippet": "Oszust działał metodą \"na funkcjonariusza CBŚ\", przed którą Policja wielokrotnie ostrzegała. Zazwyczaj sprawca posługuje się tym samym schematem. Dzwoni na",
+          "domain": "policja.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://monki.policja.gov.pl/p10/aktualnosci/106311,POLICJA-OSTRZEGA-OSZUSTWO-METODA-NA-POLICJANTA-WNUCZKA-PRACOWNIKA-BANKU.html",
+          "title": "POLICJA OSTRZEGA! OSZUSTWO METODĄ NA POLICJANTA, WNUCZKA, PRACOWNIKA BANKU !!!!! - Aktualności KPP Mońki",
+          "snippet": "Chwilę po zakończeniu pierwszej rozmowy do ofiary dzwoni kolejna - podając się za funkcjonariusza CBŚ lub Policji. Na ogół przestępca informuje rozmówcę o tym, że jest potencjalną ofiarą oszustwa. Mówi, że poprzednia rozmowa telefoniczna była próbą wyłudzenia pieniędzy. Informuje o tym, że oszust został namierzony. Nalega, aby osoba pokrzywdzona wypłaciła określoną sumę pieniędzy z banku i przekazała ją wyznaczonej osobie lub prosi o wykonanie przelewu bankowego na wskazany numer konta. [...] Tuż po przekazaniu pieniędzy kontakt się urywa, a przestępcy znikają ze wszystkimi oszczędnościami ofiary.\n\nJak nie stać się ofiarą oszustów?\n\nPrzede wszystkim należy zachować ostrożność – jeżeli dzwoni do nas ktoś, kto podszywa się pod członka naszej rodziny i prosi o pieniądze, nie podejmujmy żadnych pochopnych działań. Nie informujmy nikogo telefonicznie o ilości pieniędzy, które mamy w domu lub jakie przechowujemy na koncie. Nie wypłacajmy z banku wszystkich oszczędności. [...] Zadzwońmy do kogoś z rodziny, zapytajmy o to czy osoba, która prosiła nas o pomoc, rzeczywiście jej potrzebuje. Pamiętajmy, że nikt nie będzie nam miał za złe tego, że zachowujemy się rozsądnie. Nie ulegajmy presji czasu wywieranej przez oszustów.\n\nW szczególności pamiętajmy o tym, że funkcjonariusze Policji NIGDY nie informują o prowadzonych przez siebie sprawach telefonicznie! Nigdy nie proszą też o przekazanie pieniędzy nieznanej osobie.",
+          "domain": "monki.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://zlotoryja.policja.gov.pl/dzl/aktualnosci/bieza/166303,Nowa-metoda-oszustwa-na-BLIK-Mozesz-nieswiadomie-stac-sie-posrednikiem-przesteps.html",
+          "title": "Nowa metoda oszustwa „na BLIK” ! Możesz nieświadomie stać się pośrednikiem przestępstwa - Komenda Powiatowa Policji w Złotoryi - Portal polskiej Policji",
+          "snippet": "Jak się uchronić?\n\nPolicja radzi:\n\n Nie odsyłaj pieniędzy na inny numer telefonu ani na inne konto „na prośbę” telefoniczną,\n Nie działaj pod presją czasu ani emocji – to typowa metoda manipulacji,\n Skontaktuj się niezwłocznie ze swoim bankiem i zgłoś podejrzany przelew,\n W przypadku wątpliwości poinformuj Policję.\n\nPamiętaj, że uczciwy błąd w przelewie powinien być wyjaśniany za pośrednictwem banku, a nie prywatnych telefonów. [...] Data publikacji 09.02.2026\n\nPowrót \"Powrót\")\n\nDrukuj \"Drukuj\")\n\nPolicja ostrzega przed nową i coraz częściej stosowaną metodą oszustwa z wykorzystaniem systemu płatności BLIK. Przestępcy wykorzystują uczciwość i pośpiech przypadkowych osób, wciągając je – często nieświadomie – w proceder przestępczy. [...] Na czym polega oszustwo?  \n Na konto bankowe niczego nieświadomej osoby wpływają pieniądze, których nie oczekiwała – najczęściej w formie przelewu BLIK. Po chwili dzwoni osoba podająca się za nadawce środków i informuję o „pomyłce”, prosząc o szybki zwrot pieniędzy na inny numer telefonu powiązany z BLIKIEM.",
+          "domain": "zlotoryja.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://radomsko.policja.gov.pl/era/informacje/60271,Seniorze-nie-daj-sie-oszukac.html",
+          "title": "Seniorze - nie daj się oszukać! - Informacje",
+          "snippet": "Nigdy nie ulegaj presji czasu wywieranej przez oszustów. Pamiętaj: Policja nigdy nie prowadzi działań operacyjnych przez telefon! Policja nigdy nie wymaga",
+          "domain": "radomsko.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://malopolska.policja.gov.pl/krk/aktualnosci/aktualnosci/54555,SENIORZE-NIE-DAJ-SIE-OSZUKAC-Porady-Prewencyjne.html",
+          "title": "SENIORZE- NIE DAJ SIĘ OSZUKAĆ! Porady Prewencyjne.",
+          "snippet": "1. Nie działaj pod presją czasu. Oszuści celowo wywierają presję, by nie dać czasu na zastanowienie. · 2. Sprawdź kto dzwoni. · 3. Nie przekazuj",
+          "domain": "malopolska.policja.gov.pl",
+          "seeded": false
+        }
+      ],
+      "warning": "",
+      "relative_alert": "",
+      "safe_action": "",
+      "advice_source": "fallback"
+    },
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Hello?",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Grandma, please do not worry, this is about your grandson Marek.",
+        "t": 4.0
+      },
+      {
+        "speaker": "elder",
+        "text": "What happened to him?",
+        "t": 8.0
+      },
+      {
+        "speaker": "caller",
+        "text": "He had a car accident near Krakow and needs help immediately.",
+        "t": 12.0
+      },
+      {
+        "speaker": "elder",
+        "text": "Can I speak to him?",
+        "t": 16.0
+      },
+      {
+        "speaker": "caller",
+        "text": "I am his lawyer. A courier will collect 8,000 zloty in cash for the hospital today.",
+        "t": 22.0
+      }
+    ]
+  },
+  "content": "{\"warning\": \"This call is a scam; they pretend to be a lawyer and demand cash for a fake accident.\", \"relative_alert\": \"Warn them that the caller used lawyer impersonation, urgency pressure, and a cash‑courier money request—a typical grandparent scam.\", \"safe_action\": \"Hang up, do not hand over any money, and call a trusted relative or police on 112 to verify.\"}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

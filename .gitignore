@@ -1,0 +1,12 @@
+.env
+.env.*
+*.key
+__pycache__/
+node_modules/
+.venv/
+.DS_Store
+!.env.example
+guardian.egg-info/
+.pytest_cache/
+build/
+.vercel/

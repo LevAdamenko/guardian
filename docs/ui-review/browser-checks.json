@@ -1,0 +1,14 @@
+[
+  {
+    "width": 1280,
+    "overflow": false,
+    "console_errors": [],
+    "checks": "initial, one-click scam, family preview, empty input, safe example, keyboard tabs, typed line, full call"
+  },
+  {
+    "width": 390,
+    "overflow": false,
+    "console_errors": [],
+    "checks": "initial, one-click scam, family preview, empty input, safe example, keyboard tabs, typed line, full call"
+  }
+]

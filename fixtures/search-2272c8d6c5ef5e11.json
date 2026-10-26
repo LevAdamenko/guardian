@@ -1,0 +1,20 @@
+{
+  "request": {
+    "query": "oszustwo AnyDesk fałszywy pracownik banku policja ostrzega",
+    "include_domains": [
+      "cbzc.policja.gov.pl",
+      "cert.pl",
+      "europol.europa.eu",
+      "gov.pl",
+      "knf.gov.pl",
+      "policja.pl",
+      "uokik.gov.pl",
+      "zbp.pl"
+    ],
+    "max_results": 5,
+    "search_depth": "basic"
+  },
+  "content": "{\"answer\":null,\"follow_up_questions\":null,\"images\":[],\"query\":\"oszustwo AnyDesk fałszywy pracownik banku policja ostrzega\",\"request_id\":\"14f2577d-c51a-40e7-9f86-d558f7070628\",\"response_time\":2.22,\"results\":[{\"content\":\"Policjanci przypominają i ostrzegają: - pracownicy banku nigdy nie proszą o podanie loginu i hasła do konta, a tym bardziej kodu autoryzacyjnego SMS lub BLIK; -\",\"id\":\"9f9eca-00\",\"raw_content\":null,\"score\":0.69968605,\"title\":\"Oszustwo \\\"na pracownika banku\\\"- pokrzywdzeni stracili ...\",\"url\":\"https://cieszyn.policja.gov.pl/ka6/prewencja/akcje-i-kampanie-s/pro/344482,Oszustwo-quotna-pracownika-bankuquot-pokrzywdzeni-stracili-wszystkie-oszczednosc.html\"},{\"content\":\"Policjanci przypominają i ostrzegają: - pracownicy banku nigdy nie proszą o podanie loginu i hasła do konta, a tym bardziej kodu autoryzacyjnego SMS lub BLIK;\",\"id\":\"b2e985-01\",\"raw_content\":null,\"score\":0.6757865,\"title\":\"Oszukana metodą „na pracownika banku” straciła ponad 90 ...\",\"url\":\"https://cieszyn.policja.gov.pl/ka6/informacje/wiadomosci/350621,Oszukana-metoda-na-pracownika-banku-stracila-ponad-90-tysiecy-zlotych.html\"},{\"content\":\"Policjanci przypominają i ostrzegają: - pracownicy banku nigdy nie proszą o podanie loginu i hasła do konta, a tym bardziej kodu autoryzacyjnego SMS; - nie\",\"id\":\"fb80eb-02\",\"raw_content\":null,\"score\":0.6649108,\"title\":\"Oszustwo na pracownika banku. Mieszkanka Pisza straciła ...\",\"url\":\"https://warminsko-mazurska.policja.gov.pl/ol/aktualnosci/88189,Oszustwo-na-pracownika-banku-Mieszkanka-Pisza-stracila-12-000-zl.html\"},{\"content\":\"Oszuści podszywający się pod pracowników banku mogą poprosić m.in. o podanie poufnych danych do bankowości elektronicznej (np. kod Blik) oraz o\",\"id\":\"010c09-03\",\"raw_content\":null,\"score\":0.57723385,\"title\":\"Oszustwo metodą na „pracownika banku”. Policjanci ...\",\"url\":\"https://jawor.policja.gov.pl/dja/aktualnosci/bieza/57303,Oszustwo-metoda-na-pracownika-banku-Policjanci-apeluja-o-ostroznosc.html\"},{\"content\":\"Uwaga na fałszywego „pracownika banku” – przestępcy ciągle próbują oszukiwać · pracownicy banku nigdy nie proszą o podanie loginu i hasła do konta, a tym\",\"id\":\"68d1da-04\",\"raw_content\":null,\"score\":0.5372119,\"title\":\"Uwaga na fałszywego „pracownika banku” – przestępcy ...\",\"url\":\"https://zdunska-wola.policja.gov.pl/ezd/informacje/101880,Uwaga-na-falszywego-pracownika-banku-przestepcy-ciagle-probuja-oszukiwac.html\"}]}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

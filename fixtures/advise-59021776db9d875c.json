@@ -1,0 +1,131 @@
+{
+  "request": {
+    "verdict": {
+      "level": "SCAM",
+      "score": 11,
+      "signals": [
+        {
+          "tactic": "impersonation_authority",
+          "quote": "police officer Kowalski",
+          "explanation": "Claims to be a police officer, an authority figure.",
+          "turn_index": 1
+        },
+        {
+          "tactic": "safe_account",
+          "quote": "move the money to our safe account now",
+          "explanation": "Directs the victim to transfer money to a purported safe account.",
+          "turn_index": 3
+        },
+        {
+          "tactic": "urgency_pressure",
+          "quote": "Your bank account is at risk, so move the money to our safe account now",
+          "explanation": "States the account is at risk and demands immediate action.",
+          "turn_index": 3
+        },
+        {
+          "tactic": "secrecy_request",
+          "quote": "Do not tell anyone because this police operation is secret",
+          "explanation": "Instructs the victim to keep the matter secret.",
+          "turn_index": 5
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://leczyca.policja.gov.pl/ele/informacje/94269,Oszustwa-na-quotPolicjanta-CBSPquot-APELUJEMY-i-OSTRZEGAMY.html",
+          "title": "Oszustwa na \"Policjanta CBŚP\". APELUJEMY i ...",
+          "snippet": "Policjanci ostrzegają przed oszustami działającymi metodą na „Policjanta CBŚ”. ... Policja nigdy nie poprosi o przekazanie komuś pieniędzy, czy też",
+          "domain": "leczyca.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://policja.pl/pol/aktualnosci/121167,Podawali-sie-za-oficerow-CBSP-i-oszukiwali-seniorow.html",
+          "title": "Podawali się za oficerów CBŚP i oszukiwali seniorów",
+          "snippet": "Oszust działał metodą \"na funkcjonariusza CBŚ\", przed którą Policja wielokrotnie ostrzegała. Zazwyczaj sprawca posługuje się tym samym schematem. Dzwoni na",
+          "domain": "policja.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://nowydworgdanski.policja.gov.pl/pm9/informacje/147715,Bezpieczna-bankowosc-internetowa-Policja-ostrzega-i-przypomina.html",
+          "title": "Bezpieczna bankowość internetowa – Policja ostrzega i przypomina - Informacje Komenda Powiatowa Policji w Nowym Dworze Gdańskim",
+          "snippet": "W ostatnich miesiącach rośnie liczba zgłoszeń dotyczących oszustw związanych z bankowością elektroniczną. Sprawcy podszywają się pod banki, wysyłają fałszywe SMS-y i e-maile, a także telefonują do potencjalnych ofiar, nakłaniając je do zainstalowania aplikacji umożliwiających przejęcie kontroli nad telefonem lub komputerem.\n\nNajczęstsze metody działania oszustów to:\n\n fałszywe powiadomienia o \"podejrzanych logowaniach\" i konieczności \"zabezpieczenia konta\", [...] Jeśli padłeś ofiarą oszustwa – niezwłocznie powiadom Policję i skontaktuj się ze swoim bankiem.\n\n \n\nPowrót na górę strony [...] Drukuj \"Drukuj\")\n\nCoraz więcej osób korzysta z bankowości internetowej i mobilnej. To szybkie i wygodne rozwiązanie, ale niestety wiąże się również z ryzykiem oszustw. Policja apeluje o ostrożność i przypomina podstawowe zasady, które pozwolą uniknąć utraty oszczędności.",
+          "domain": "nowydworgdanski.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://monki.policja.gov.pl/p10/aktualnosci/106311,POLICJA-OSTRZEGA-OSZUSTWO-METODA-NA-POLICJANTA-WNUCZKA-PRACOWNIKA-BANKU.html",
+          "title": "POLICJA OSTRZEGA! OSZUSTWO METODĄ NA POLICJANTA, WNUCZKA, PRACOWNIKA BANKU !!!!! - Aktualności KPP Mońki",
+          "snippet": "Sprawcy oszustw wywierają na ofiarach presję czasu. Nie dają chwili na zastanowienie się, czy sprawdzenie informacji o dzwoniącym. Przekonują starsze osoby, że ich pieniądze pomogą w schwytaniu przestępców. Mówią, że gotówka przechowywana na koncie nie jest bezpieczna, a oszust ma do nich łatwy dostęp. Przestępcy podając się za funkcjonariuszy, grożą konsekwencjami prawnymi, jeżeli ich rozmówca nie będzie współpracował. [...] Chwilę po zakończeniu pierwszej rozmowy do ofiary dzwoni kolejna - podając się za funkcjonariusza CBŚ lub Policji. Na ogół przestępca informuje rozmówcę o tym, że jest potencjalną ofiarą oszustwa. Mówi, że poprzednia rozmowa telefoniczna była próbą wyłudzenia pieniędzy. Informuje o tym, że oszust został namierzony. Nalega, aby osoba pokrzywdzona wypłaciła określoną sumę pieniędzy z banku i przekazała ją wyznaczonej osobie lub prosi o wykonanie przelewu bankowego na wskazany numer konta. [...] Tuż po przekazaniu pieniędzy kontakt się urywa, a przestępcy znikają ze wszystkimi oszczędnościami ofiary.\n\nJak nie stać się ofiarą oszustów?\n\nPrzede wszystkim należy zachować ostrożność – jeżeli dzwoni do nas ktoś, kto podszywa się pod członka naszej rodziny i prosi o pieniądze, nie podejmujmy żadnych pochopnych działań. Nie informujmy nikogo telefonicznie o ilości pieniędzy, które mamy w domu lub jakie przechowujemy na koncie. Nie wypłacajmy z banku wszystkich oszczędności.",
+          "domain": "monki.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://lodzka.policja.gov.pl/ld/informacje/49334,Seniorze-uwazaj-na-oszustow.html",
+          "title": "Seniorze, uważaj na oszustów !!! - Policja Łódzka - Portal polskiej Policji",
+          "snippet": "Jeśli senior posiada swoje oszczędności w banku, oszusta prosi o ich wypłacenie w całości, informując jednocześnie, by nikomu nie mówić o celu wypłaty. Oszukując po raz kolejny  przekonuje ofiarę, że pracownik banku również jest uwikłany w przestępczy proceder. Pieniądze pozostawione w miejscu rzekomej ,,zasadzki” zostają bezpowrotnie utracone, bowiem oszuści przejmując, gotówkę lub inne kosztowności, natychmiast zrywają kontakt z ofiarą.\n\nZAPAMIĘTAJ! [...] Zachowaj ostrożność – jeżeli dzwoni ktoś, kto podszywa się pod członka rodziny i prosi o pieniądze, nie podejmuj żadnych pochopnych działań – nie wykonuj jego poleceń – nie daj się zmanipulować!  \n Nie mów nikomu, a szczególnie przez telefon, o kwocie oszczędności jakie posiadasz i gdzie je przetrzymujesz.  \n Zadzwoń do innego członka rodziny i upewnij się, czy osoba, która prosiła o pomoc, faktycznie jej potrzebuje. [...] Policjanci nieustannie ostrzegają przed oszustami, którzy metodą ,,na wnuczka”, „na policjanta” lub pod inną legendą oszukują osoby. Ich ofiarami padają głównie seniorzy, z którymi przestępcy kontaktują się telefonicznie i przedstawiając nieprawdziwe historie, ,,podszywając” się niejednokrotnie pod członków najbliższej rodziny , krewnych a nawet policjanta czy prokuratora, nakłaniają do przekazania kosztowności, które stanowią niekiedy oszczędności całego życia. Seniorze, bądź czujny i nie daj",
+          "domain": "lodzka.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://radomsko.policja.gov.pl/era/informacje/60271,Seniorze-nie-daj-sie-oszukac.html",
+          "title": "Seniorze - nie daj się oszukać! - Komenda Powiatowa Policji w Radomsku - Portal polskiej Policji",
+          "snippet": "seniora by tego dokonać. Czasami informuje, że oszczędności te zostaną zwrócone bezpośrednio po specjalnym oznakowaniu. Jeśli senior posiada swoje oszczędności w banku, oszust prosi o ich wypłacenie w całości, informując jednocześnie, by nikomu nie mówić o celu wypłaty. Oszust  przekonuje ofiarę, że pracownik banku również jest uwikłany w przestępczy proceder. Sprawcy od początku rozmowy przez telefon komórkowy, nie pozwalają się rozłączyć i w ten sposób \"monitorują\" pokrzywdzonych w drodze do [...] Zachowaj ostrożność – jeżeli dzwoni ktoś, kto podszywa się pod członka rodziny i prosi o pieniądze, nie podejmuj żadnych pochopnych działań – nie wykonuj jego poleceń – nie daj się zmanipulować!\n Nie mów nikomu, a szczególnie przez telefon, o kwocie oszczędności jakie posiadasz i gdzie je przetrzymujesz.\n Zadzwoń do innego członka rodziny i upewnij się, czy osoba, która prosiła o pomoc, faktycznie jej potrzebuje. [...] Oszuści działający pod legendą bezwzględnie wykorzystują wrażliwość i ufność osób starszych, chcąc wyłudzić od nich pieniądze. Minionej doby fałszywy „wnuczek” próbował oszukać kilku starszych mieszkańców Sieradza. Na szczęście kilku seniorów wykazało się czujnością i nie dało się zwieść oszustom. Niestety w jednym przypadku, przestępcy osiągnęli swój cel, wyłudzając od 70-letniej kobiety sporą sumę pieniędzy. Na kanwie tego zdarzenia policjanci apelują do seniorów - nie dajcie się oszukać!",
+          "domain": "radomsko.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://malopolska.policja.gov.pl/krk/aktualnosci/aktualnosci/54555,SENIORZE-NIE-DAJ-SIE-OSZUKAC-Porady-Prewencyjne.html",
+          "title": "SENIORZE- NIE DAJ SIĘ OSZUKAĆ! Porady Prewencyjne.",
+          "snippet": "1. Nie działaj pod presją czasu. Oszuści celowo wywierają presję, by nie dać czasu na zastanowienie. · 2. Sprawdź kto dzwoni. · 3. Nie przekazuj",
+          "domain": "malopolska.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://belchatow.policja.gov.pl/ebe/informacje/80797,Areszt-dla-26-latka-zatrzymanego-za-oszustwo-na-seniorze.html",
+          "title": "Areszt dla 26-latka zatrzymanego za oszustwo na seniorze - Komenda Powiatowa Policji w Bełchatowie - Portal polskiej Policji",
+          "snippet": "Zachowajmy ostrożność też w sytuacji jeżeli dzwoni ktoś, kto podszywa się pod członka rodziny, czy urzędnika, np. przedstawiciela banku, prosi o pieniądze lub mówi, że nasze pieniądze są zagrożone - nie podejmuj żadnych pochopnych działań. Podziel się zaraz tą informacją z bliskimi, nie działaj sam. Pamiętajmy, że nikt nie będzie nam miał za złe tego, że zachowujemy się rozsądnie. Nie ulegajmy presji czasu wywieranej przez oszustów. [...] Przede wszystkim należy zachować ostrożność,\n Jeśli nie rozpoznajesz głosu, odłóż słuchawkę – oszuści wywierają silny nacisk i presję, mają doświadczenie w manipulowaniu ludźmi, więc im szybciej zakończysz rozmowę, tym lepiej, [...] Przypominamy :\n\nOfiarą oszustów może stać się każdy, nie tylko osoby starsze, dlatego warto ostrzegać i rozmawiać o tym, jak bezpiecznie postępować w przypadku telefonicznej informacji o wypadku krewnego. Nie pozwólmy, aby naszych bliskich spotykały takie sytuacje. Przypominajmy im, jak się zachować, gdy zadzwoni do nich oszust. Wytłumaczmy im, jak działają przestępcy.\n\nJak postępować w sytuacji kiedy dzwoni obca osoba informując o wypadku bliskiej osoby?",
+          "domain": "belchatow.policja.gov.pl",
+          "seeded": false
+        }
+      ],
+      "warning": "",
+      "relative_alert": "",
+      "safe_action": "",
+      "advice_source": "fallback"
+    },
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Good afternoon.",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "This is CBŚP police officer Kowalski calling about your savings.",
+        "t": 3.0
+      },
+      {
+        "speaker": "elder",
+        "text": "Is something wrong?",
+        "t": 7.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Your bank account is at risk, so move the money to our safe account now.",
+        "t": 11.0
+      },
+      {
+        "speaker": "elder",
+        "text": "Should I call my bank?",
+        "t": 16.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Do not tell anyone because this police operation is secret.",
+        "t": 20.0
+      }
+    ]
+  },
+  "content": "{\"warning\": \"Someone claiming to be police says your money is at risk and asks you to move it secretly—this is a scam.\", \"relative_alert\": \"Alert them that the caller impersonated police, demanded a secret transfer to a 'safe' account, and used urgency and secrecy tactics.\", \"safe_action\": \"Hang up immediately, do not send any money, and contact your bank or a relative using a phone number you know is genuine.\"}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

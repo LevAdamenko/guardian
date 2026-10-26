@@ -1,0 +1,20 @@
+{
+  "request": {
+    "query": "oszuści wywierają presję czasu policja ostrzega seniorów",
+    "include_domains": [
+      "cbzc.policja.gov.pl",
+      "cert.pl",
+      "europol.europa.eu",
+      "gov.pl",
+      "knf.gov.pl",
+      "policja.pl",
+      "uokik.gov.pl",
+      "zbp.pl"
+    ],
+    "max_results": 5,
+    "search_depth": "basic"
+  },
+  "content": "{\"answer\":null,\"follow_up_questions\":null,\"images\":[],\"query\":\"oszuści wywierają presję czasu policja ostrzega seniorów\",\"request_id\":\"f95c54da-a751-40df-b79c-fbf33f61aea5\",\"response_time\":1.6,\"results\":[{\"content\":\"Nigdy nie ulegaj presji czasu wywieranej przez oszustów. Pamiętaj: Policja nigdy nie prowadzi działań operacyjnych przez telefon! Policja nigdy nie wymaga\",\"id\":\"ac22bb-00\",\"raw_content\":null,\"score\":0.8051581,\"title\":\"Seniorze - nie daj się oszukać! - Informacje\",\"url\":\"https://radomsko.policja.gov.pl/era/informacje/60271,Seniorze-nie-daj-sie-oszukac.html\"},{\"content\":\"1. Nie działaj pod presją czasu. Oszuści celowo wywierają presję, by nie dać czasu na zastanowienie. · 2. Sprawdź kto dzwoni. · 3. Nie przekazuj\",\"id\":\"b10cb1-01\",\"raw_content\":null,\"score\":0.7935067,\"title\":\"SENIORZE- NIE DAJ SIĘ OSZUKAĆ! Porady Prewencyjne.\",\"url\":\"https://malopolska.policja.gov.pl/krk/aktualnosci/aktualnosci/54555,SENIORZE-NIE-DAJ-SIE-OSZUKAC-Porady-Prewencyjne.html\"},{\"content\":\"Zachowajmy ostrożność też w sytuacji jeżeli dzwoni ktoś, kto podszywa się pod członka rodziny, czy urzędnika, np. przedstawiciela banku, prosi o pieniądze lub mówi, że nasze pieniądze są zagrożone - nie podejmuj żadnych pochopnych działań. Podziel się zaraz tą informacją z bliskimi, nie działaj sam. Pamiętajmy, że nikt nie będzie nam miał za złe tego, że zachowujemy się rozsądnie. Nie ulegajmy presji czasu wywieranej przez oszustów. [...] Przede wszystkim należy zachować ostrożność,\\n Jeśli nie rozpoznajesz głosu, odłóż słuchawkę – oszuści wywierają silny nacisk i presję, mają doświadczenie w manipulowaniu ludźmi, więc im szybciej zakończysz rozmowę, tym lepiej, [...] Przypominamy :\\n\\nOfiarą oszustów może stać się każdy, nie tylko osoby starsze, dlatego warto ostrzegać i rozmawiać o tym, jak bezpiecznie postępować w przypadku telefonicznej informacji o wypadku krewnego. Nie pozwólmy, aby naszych bliskich spotykały takie sytuacje. Przypominajmy im, jak się zachować, gdy zadzwoni do nich oszust. Wytłumaczmy im, jak działają przestępcy.\\n\\nJak postępować w sytuacji kiedy dzwoni obca osoba informując o wypadku bliskiej osoby?\",\"id\":\"b2cd20-02\",\"raw_content\":null,\"score\":0.7402687,\"title\":\"Areszt dla 26-latka zatrzymanego za oszustwo na seniorze - Komenda Powiatowa Policji w Bełchatowie - Portal polskiej Policji\",\"url\":\"https://belchatow.policja.gov.pl/ebe/informacje/80797,Areszt-dla-26-latka-zatrzymanego-za-oszustwo-na-seniorze.html\"},{\"content\":\"Oszuści ciągle modyfikują metody swojego działania, chcąc szybko wyłudzić pieniądze i często pozbawić seniorów oszczędności życia. Policjanci ostrzegają przed\",\"id\":\"a96115-03\",\"raw_content\":null,\"score\":0.7067782,\"title\":\"Nie daj się oszukać fałszywym „policjantom”! Uważaj, ...\",\"url\":\"https://tarnowskie-gory.policja.gov.pl/k26/prewencja/dla-seniorow/osoby-starsze/294480,Nie-daj-sie-oszukac-falszywym-policjantom-Uwazaj-gdzie-i-w-co-inwestujesz-chcac-.html\"},{\"content\":\"Funkcjonariusze prowadzą cykliczne spotkania, na których informują seniorów o różnego rodzaju zagrożeniach. Niestety oszuści nadal atakują i\",\"id\":\"635ec5-04\",\"raw_content\":null,\"score\":0.64773196,\"title\":\"Policjanci ostrzegają seniorów przed oszustami - Aktualności\",\"url\":\"https://lubuska.policja.gov.pl/go/serwis-informacyjny/aktualnosci/63501,Policjanci-ostrzegaja-seniorow-przed-oszustami.html\"}]}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

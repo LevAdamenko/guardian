@@ -1,0 +1,19 @@
+{
+  "request": {
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Good afternoon.",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "This is CBŚP police officer Kowalski calling about your savings.",
+        "t": 3.0
+      }
+    ]
+  },
+  "content": "{\"signals\": [{\"tactic\": \"impersonation_authority\", \"quote\": \"CBŚP police officer Kowalski\", \"explanation\": \"The caller pretends to be a police officer, claiming authority from CBŚP.\"}]}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

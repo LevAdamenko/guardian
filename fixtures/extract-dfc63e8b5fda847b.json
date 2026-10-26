@@ -1,0 +1,14 @@
+{
+  "request": {
+    "transcript": [
+      {
+        "speaker": "caller",
+        "text": "InPost: your parcel is on hold. Pay the 1.99 PLN delivery fee within 24 hours or it will be returned. Enter your card number and CVV at https://inpost-pl.delivery-fee.top",
+        "t": 0.0
+      }
+    ]
+  },
+  "content": "{\"signals\": [{\"tactic\": \"urgency_pressure\", \"quote\": \"Pay the 1.99 PLN delivery fee within 24 hours\", \"explanation\": \"The caller imposes a tight deadline to create pressure for immediate action.\"}, {\"tactic\": \"credentials_request\", \"quote\": \"Enter your card number and CVV\", \"explanation\": \"The caller requests sensitive payment card details, which are credentials that could be used for fraud.\"}]}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

@@ -1,0 +1,61 @@
+{
+  "request": {
+    "verdict": {
+      "level": "SAFE",
+      "score": 1,
+      "signals": [
+        {
+          "tactic": "urgency_pressure",
+          "quote": "needs help immediately",
+          "explanation": "The caller states that Marek needs help immediately, creating pressure to act urgently.",
+          "turn_index": 3
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://radomsko.policja.gov.pl/era/informacje/60271,Seniorze-nie-daj-sie-oszukac.html",
+          "title": "Seniorze - nie daj się oszukać! - Informacje",
+          "snippet": "Nigdy nie ulegaj presji czasu wywieranej przez oszustów. Pamiętaj: Policja nigdy nie prowadzi działań operacyjnych przez telefon! Policja nigdy nie wymaga",
+          "domain": "radomsko.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://malopolska.policja.gov.pl/krk/aktualnosci/aktualnosci/54555,SENIORZE-NIE-DAJ-SIE-OSZUKAC-Porady-Prewencyjne.html",
+          "title": "SENIORZE- NIE DAJ SIĘ OSZUKAĆ! Porady Prewencyjne.",
+          "snippet": "1. Nie działaj pod presją czasu. Oszuści celowo wywierają presję, by nie dać czasu na zastanowienie. · 2. Sprawdź kto dzwoni. · 3. Nie przekazuj",
+          "domain": "malopolska.policja.gov.pl",
+          "seeded": false
+        }
+      ],
+      "warning": "",
+      "relative_alert": "",
+      "safe_action": "",
+      "advice_source": "fallback"
+    },
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Hello?",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Grandma, please do not worry, this is about your grandson Marek.",
+        "t": 4.0
+      },
+      {
+        "speaker": "elder",
+        "text": "What happened to him?",
+        "t": 8.0
+      },
+      {
+        "speaker": "caller",
+        "text": "He had a car accident near Krakow and needs help immediately.",
+        "t": 12.0
+      }
+    ]
+  },
+  "content": "{\"warning\": \"Hello, if you’re unsure about the call, take a moment and check with family before acting.\", \"relative_alert\": \"Tell them the caller used urgency pressure, saying Marek had an accident and needs immediate help; verify with Marek directly.\", \"safe_action\": \"Call Marek or another trusted relative using a known number to confirm his safety before sending money or sharing information.\"}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

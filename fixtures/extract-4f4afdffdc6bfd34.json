@@ -1,0 +1,29 @@
+{
+  "request": {
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Good afternoon.",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "This is CBŚP police officer Kowalski calling about your savings.",
+        "t": 3.0
+      },
+      {
+        "speaker": "elder",
+        "text": "Is something wrong?",
+        "t": 7.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Your bank account is at risk, so move the money to our safe account now.",
+        "t": 11.0
+      }
+    ]
+  },
+  "content": "{\"signals\": [{\"tactic\": \"impersonation_authority\", \"quote\": \"This is CBŚP police officer\", \"explanation\": \"Claims to be a police officer.\"}, {\"tactic\": \"money_transfer_request\", \"quote\": \"move the money to our safe account\", \"explanation\": \"Requests transferring money.\"}, {\"tactic\": \"safe_account\", \"quote\": \"our safe account\", \"explanation\": \"Refers to a supposed safe account as the destination for funds.\"}, {\"tactic\": \"urgency_pressure\", \"quote\": \"move the money to our safe account now\", \"explanation\": \"Pressures the person to act immediately.\"}]}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

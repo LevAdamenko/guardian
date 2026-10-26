@@ -1,0 +1,101 @@
+{
+  "request": {
+    "verdict": {
+      "level": "SCAM",
+      "score": 9,
+      "signals": [
+        {
+          "tactic": "impersonation_family",
+          "quote": "it is your friend Anna",
+          "explanation": "Caller pretends to be a friend/family member.",
+          "turn_index": 1
+        },
+        {
+          "tactic": "urgency_pressure",
+          "quote": "I need help urgently",
+          "explanation": "Caller pressures immediate action by stating urgent need.",
+          "turn_index": 1
+        },
+        {
+          "tactic": "blik_code_request",
+          "quote": "send me the BLIK code from your banking app",
+          "explanation": "Caller asks for a BLIK code from the victim’s banking app.",
+          "turn_index": 3
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://tarnow.policja.gov.pl/kt/aktualnosci/61332,Uwaga-na-oszustwa-z-uzyciem-kodu-BLIK.html",
+          "title": "Uwaga na oszustwa z użyciem kodu BLIK - AKTUALNOŚCI",
+          "snippet": "Sprawca, powołując się na nagłe problemy z obsługą konta bankowego, poprosił o wygenerowanie kodu BLIK w celu opłacenia rzekomych zakupów.",
+          "domain": "tarnow.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://praga-polnoc.policja.gov.pl/r6/aktualnosci/145609,Ktos-wysyla-Ci-prosbe-o-BLIK-a-nie-daj-sie-oszukac.html",
+          "title": "Ktoś wysyła Ci prośbę o BLIK-a - nie daj się oszukać!",
+          "snippet": "Uważaj na oszustów! Bardzo popularną metodą ich działania jest prośba o wysłanie kodu BLIK, z konta znanej nam osoby, za pośrednictwem komunikatora.",
+          "domain": "praga-polnoc.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://gryfino.policja.gov.pl/zgr/aktualnosci/prewencja/6200,Bezpieczny-senior-Policja-ostrzega-przed-oszustami-wykorzystujacymi-metode-quotn.html",
+          "title": "Bezpieczny senior. Policja ostrzega przed oszustami wykorzystującymi metodę \"na wnuczka\" - Komenda Powiatowa Policji w Gryfinie - Portal polskiej Policji",
+          "snippet": "Powrót \"Powrót\")\n\nDrukuj \"Drukuj\")\n\nBezpieczny senior to akcja policji mająca na celu chronić osoby starsze, przed próbami oszustw, wyłudzeń i kradzieży.Działania sprawców wskazują, że wykorzystują oni metodę, która w policyjnym sloganie określana jest metodą „na wnuczka”. Żeby ustrzec seniorów przed działaniem oszustów i wyczulić na ewentualne niepokojące sygnały w najbliższym i lokalnym środowisku warto zapoznać się ze sposobem działania sprawców. [...] Akcja bezpieczny senior ma m.in. pomóc uniknąć oszustw tzw. metodą na wnuczka. Jak się przed tymchronić?Przeczytaj porady policjantów.  \n   \n Przestępcy działający tą metodą bez skrupułów wykorzystują wiek seniorów i ich niejednokrotnie trudną sytuację materialną. Podszywając się pod członków rodziny, lekarzy, pracowników opieki społecznej, przedstawicieli gminy, urzędów i instytucji społecznych - najpierw wzbudzają zaufanie w seniorach, a następnie okradają ich lub ich mieszkania. [...] Czynów tych dopuszczają się młodzi ludzie, którzy wcześniej rozpoznają sytuacją rodzinną i materialną ofiary. W przestępstwach „na wnuczka” – przeważnie sprawcy dzwonią na telefon domowy seniorów przedstawiając się jako wnuk, wnuczka, siostrzeniec lub siostrzenica (głos w telefonie jest zniekształcony i starsi ludzie często myślą, iż dzwonią faktycznie osoby z rodziny). Tłumaczą „dziadkowi” lub „babci”, np. że spowodowali wypadek drogowy i potrzebują pieniędzy, żeby zapłacić pokrzywdzonym i",
+          "domain": "gryfino.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://lubin.policja.gov.pl/dlu/aktualnosci/biezace-informacje/118941,Oszustwa-metoda-quotna-wnuczkaquot-Lubinska-Policja-ostrzega.html",
+          "title": "Oszustwa metodą \"na wnuczka\" - Lubińska Policja ostrzega",
+          "snippet": "Oszuści \"na wnuczka\" i \"na policjanta\" wciąż oszukują starsze osoby. Wyłudzają pieniądze od naszych babć, mam, cioć, dziadków, ojców i wujków.",
+          "domain": "lubin.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://radomsko.policja.gov.pl/era/informacje/60271,Seniorze-nie-daj-sie-oszukac.html",
+          "title": "Seniorze - nie daj się oszukać! - Informacje",
+          "snippet": "Nigdy nie ulegaj presji czasu wywieranej przez oszustów. Pamiętaj: Policja nigdy nie prowadzi działań operacyjnych przez telefon! Policja nigdy nie wymaga",
+          "domain": "radomsko.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://malopolska.policja.gov.pl/krk/aktualnosci/aktualnosci/54555,SENIORZE-NIE-DAJ-SIE-OSZUKAC-Porady-Prewencyjne.html",
+          "title": "SENIORZE- NIE DAJ SIĘ OSZUKAĆ! Porady Prewencyjne.",
+          "snippet": "1. Nie działaj pod presją czasu. Oszuści celowo wywierają presję, by nie dać czasu na zastanowienie. · 2. Sprawdź kto dzwoni. · 3. Nie przekazuj",
+          "domain": "malopolska.policja.gov.pl",
+          "seeded": false
+        }
+      ],
+      "warning": "",
+      "relative_alert": "",
+      "safe_action": "",
+      "advice_source": "fallback"
+    },
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Hi, who is this?",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Hi auntie, it is your friend Anna. I need help urgently.",
+        "t": 3.0
+      },
+      {
+        "speaker": "elder",
+        "text": "What happened?",
+        "t": 6.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Please send me the BLIK code from your banking app so I can pay now.",
+        "t": 10.0
+      }
+    ]
+  },
+  "content": "{\"warning\": \"This call is a scam pretending to be a friend asking for a BLIK code—do not share it.\", \"relative_alert\": \"Warn them about a caller impersonating a friend, creating urgency, and requesting a BLIK code.\", \"safe_action\": \"Do not send any BLIK code; hang up and call the person back using a known number to verify.\"}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

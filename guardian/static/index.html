@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guardian — Spot the scam. Protect your family.</title>
+  <meta name="description" content="Explore how Guardian flags scam calls and messages targeting older people in Poland. Try an offline example with evidence and a clear next step.">
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    #live-control[hidden] { display:none; }
+    #judge-code { width:180px; min-width:0; max-width:100%; flex:1; }
+    :root { color-scheme:dark; --ink:#f3f5fa; --paper:#142136; --blue:#ffca70; --green:#85d9b2; --amber:#ffca70; --red:#ff939b; --line:#3b4b63; --muted:#b9c6d9; }
+    * { box-sizing:border-box; } html { scroll-behavior:smooth; } body { margin:0; background:#0b1423; color:var(--ink); font:18px/1.5 'Atkinson Hyperlegible',Arial,sans-serif; }
+    button,select,textarea,input { font:inherit; } button { cursor:pointer; border:1px solid transparent; border-radius:8px; padding:12px 20px; min-height:50px; background:var(--amber); color:#172032; font-weight:700; } button:hover { background:#ffdc9e; } button:disabled { opacity:.55; cursor:wait; } :focus-visible { outline:3px solid #ffca70; outline-offset:5px; } a { color:var(--amber); text-underline-offset:4px; } p { margin:.65rem 0; } h1,h2,h3 { line-height:1.15; } h2 { font-size:26px; margin:0 0 18px; } h3 { font-size:22px; } .note { color:var(--muted); font-size:16px; }
+    header { max-width:1200px; margin:auto; padding:22px 28px; display:flex; align-items:center; justify-content:space-between; gap:16px; border-bottom:1px solid var(--line); } .brand { display:flex; align-items:center; gap:12px; font-size:28px; font-weight:700; text-decoration:none; color:var(--ink); } .brand svg { width:34px; height:38px; } .event { font-size:16px; color:var(--muted); text-align:right; }
+    main { max-width:1200px; margin:auto; padding:0 28px 40px; display:grid; grid-template-columns:minmax(0,1fr); gap:28px; } main > * { min-width:0; } .hero { text-align:center; padding:34px 0 0; } h1 { font-size:clamp(36px,4.5vw,58px); letter-spacing:-1.5px; margin:0 0 14px; } .intro { color:var(--muted); font-size:20px; max-width:730px; margin:0 auto; } .hero-actions { display:flex; justify-content:center; align-items:center; gap:24px; flex-wrap:wrap; margin:22px 0 0; } .hero-actions a { font-size:18px; }
+    .phone { width:min(100%,760px); justify-self:center; background:#19283e; border:2px solid #57667d; border-radius:34px; padding:18px 24px; box-shadow:0 22px 80px #0005; position:relative; } .phone:before { content:''; display:block; width:76px; height:6px; border-radius:10px; background:#738098; margin:0 auto 14px; } .phone-top { display:flex; justify-content:space-between; gap:12px; color:var(--muted); font-size:16px; padding-bottom:12px; } .call-identity { display:flex; align-items:center; gap:14px; border-bottom:1px solid var(--line); padding-bottom:14px; } .call-identity svg { width:46px; height:46px; padding:11px; background:#2a3c55; border-radius:50%; flex-shrink:0; } .call-identity strong { font-size:22px; } .call-identity span { display:block; color:var(--muted); font-size:16px; } .wave { margin-left:auto; display:flex; gap:4px; align-items:center; height:30px; } .wave i { width:4px; height:12px; background:var(--amber); animation:wave 1s ease-in-out 4 alternate; } .wave i:nth-child(2n) { height:26px; animation-delay:.3s; } .wave i:nth-child(3n) { height:18px; animation-delay:.6s; } @keyframes wave { to { transform:scaleY(.4); } }
+    .incoming { padding:8px 0; } .bubble { max-width:94%; margin:12px 0; padding:12px 16px; border-radius:4px 16px 16px 16px; background:#25364e; border:1px solid #465974; font-size:20px; overflow-wrap:anywhere; } .bubble.elder { margin-left:auto; background:#1c2b40; border-radius:16px 4px 16px 16px; } .bubble small { display:block; font-size:16px; margin-bottom:4px; color:var(--muted); } mark { background:#ffca70; color:#172032; padding:0 3px; border-radius:3px; } .transcript { height:270px; overflow:auto; display:none; padding:6px 2px; } .phone-note { color:var(--muted); font-size:16px; margin:12px 0 0; }
+    .risk-meter { border-top:1px solid var(--line); padding-top:14px; margin-top:14px; } .meter-heading { display:flex; justify-content:space-between; gap:12px; font-size:16px; margin-bottom:10px; } #meter-state { color:var(--amber); } #meter-state[data-level="SCAM"] { color:var(--red); } #meter-state[data-level="SAFE"] { color:var(--green); } .meter-track { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; } .meter-track span { border-top:5px solid; padding-top:6px; font-size:16px; color:var(--muted); } .meter-track span:nth-child(1) { border-color:var(--green); } .meter-track span:nth-child(2) { border-color:var(--amber); } .meter-track span:nth-child(3) { border-color:var(--red); } .meter-track .active { color:var(--ink); font-weight:700; } .meter-track .active:after { content:' ●'; } .demo-heading { display:flex; justify-content:space-between; align-items:center; gap:20px; padding-top:28px; border-top:1px solid var(--line); scroll-margin-top:20px; } .demo-heading h2 { margin:0; font-size:30px; } .provider-badge { font-size:16px; border:1px solid var(--line); border-radius:6px; padding:7px 12px; color:var(--muted); }
+    .workspace { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); gap:24px; align-items:start; } .card { background:var(--paper); border:1px solid var(--line); border-radius:12px; padding:26px; min-width:0; } .tabs { display:flex; gap:4px; margin-bottom:20px; border-bottom:1px solid var(--line); } .tabs button { flex:1; min-width:0; padding:12px 6px; background:transparent; color:var(--muted); font-size:18px; border-radius:0; } .tabs button[aria-selected="true"] { color:var(--amber); border-bottom:3px solid var(--amber); } .tab { display:none; } .tab.active { display:block; } label { display:block; font-weight:700; margin:14px 0 8px; } select,textarea,input { width:100%; min-width:0; border:1px solid #73839b; border-radius:6px; padding:12px; background:#0b1423; color:var(--ink); } textarea { min-height:135px; resize:vertical; } .controls { display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; } #speed,#mute,#listen-speaker,#listen-stop,.example-button { background:#24354c; color:var(--ink); border:1px solid #61718a; } .example-button { font-size:18px; } .status { color:var(--amber); margin:16px 0 0; } .status:empty { display:none; }
+    .risk { border-top:4px solid #73839b; } .risk.SAFE { border-top-color:var(--green); } .risk.CAUTION { border-top-color:var(--amber); } .risk.SCAM { border-top-color:var(--red); } .risk h2 { font-size:20px; color:var(--muted); margin:0; } .score { font-size:30px; line-height:1.2; font-weight:700; margin:16px 0; } .risk.SCAM .score { color:var(--red); } .risk.CAUTION .score { color:var(--amber); } .action { padding:16px; background:#26374e; border-radius:6px; font-weight:700; } .risk.SCAM .action { background:#462533; color:#ffcad0; } .advice-source { display:inline-block; margin:8px 0 0; font-size:16px; color:var(--muted); } #advice-source { display:block; } #spoken-warning { color:var(--red); } .relative { display:none; grid-column:1/-1; border-color:#a65b6c; } .relative.visible { display:block; }
+    .evidence-grid { display:grid; grid-template-columns:1fr 1fr; gap:36px; } .evidence h3 { margin:0 0 12px; } .signal { border-top:1px solid var(--line); padding:16px 0; overflow-wrap:anywhere; } summary { cursor:pointer; color:var(--muted); padding:10px 0; min-height:48px; } #sources .advice-source { display:block; } .signal strong { text-transform:capitalize; } .quote { margin:8px 0; font-size:20px; } #signals > p,#sources > p { color:var(--muted); } footer { color:var(--muted); font-size:16px; border-top:1px solid var(--line); padding-top:24px; display:flex; justify-content:space-between; gap:28px; } .skip { position:absolute; top:-100px; left:20px; padding:12px; background:#142136; z-index:2; } .skip:focus { top:10px; }
+    @media(max-width:700px) { header { padding:16px 18px; } .event { max-width:145px; font-size:14px; } .brand { font-size:24px; gap:8px; } main { padding:0 16px 28px; gap:24px; } .hero { padding-top:26px; } h1 { letter-spacing:-1px; } .intro { font-size:18px; } .hero-actions { gap:16px; } .hero-actions button { width:100%; } .phone { padding:14px; border-radius:26px; } .phone-top { font-size:14px; } .bubble { font-size:18px; padding:10px 12px; } .call-identity strong { font-size:20px; } .wave { gap:3px; } .phone-note { font-size:16px; } .workspace,.evidence-grid { grid-template-columns:minmax(0,1fr); } .card { padding:20px; } .demo-heading { flex-wrap:wrap; gap:12px; } .demo-heading h2 { font-size:28px; } footer { flex-direction:column; gap:8px; } .tabs button { font-size:18px; padding:10px 3px; } }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } * { animation:none!important; transition:none!important; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#demo">Skip to demo</a>
+  <header><a class="brand" href="#"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4 8 13v17c0 15 10 26 24 30 14-4 24-15 24-30V13Z" fill="#ffca70"/><path d="m21 32 8 8 15-16" fill="none" stroke="#142136" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>Guardian</a><span class="event">NVIDIA × Nebius<br>Hackathon prototype</span></header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">A familiar voice. An unfamiliar request.</h1>
+      <p class="intro">Scam protection for older people in Poland.<br>Guardian spots the pressure in calls and SMS, so your family can pause safely.</p>
+      <div class="hero-actions"><button id="try-example" type="button" disabled>Check a scam SMS →</button><a href="#demo">Try a sample call ↓</a></div>
+    </section>
+    <section class="phone" aria-label="Conversation preview">
+      <div class="phone-top"><span>Guardian · Call protection</span><span id="preview-label">Illustrative replay</span></div>
+      <div class="call-identity"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h4l2 5-3 2a15 15 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2C10 21 3 14 3 5a2 2 0 0 1 2-2Z"/></svg><div><strong id="call-title">Unknown caller</strong><span id="caller-name">Sample call · not connected</span></div><div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      <div class="risk-meter"><div class="meter-heading"><span>Risk in the conversation</span><strong id="meter-state" data-level="SCAM">Illustration · SCAM</strong></div><div class="meter-track" aria-label="Risk scale: safe, caution, scam"><span data-level="SAFE">SAFE</span><span data-level="CAUTION">CAUTION</span><span data-level="SCAM" class="active">SCAM</span></div></div>
+      <div id="incoming" class="incoming"><div class="bubble"><small>Caller · claims to be your bank</small>“Your savings are at risk. <mark>Move your money to a safe account.</mark>”</div><div class="bubble"><small>Caller</small>“<mark>Don’t tell anyone.</mark> We need to act now.”</div></div>
+      <div id="transcript" class="transcript" role="log" aria-label="Conversation transcript" tabindex="0"></div>
+
+      <p class="phone-note" id="phone-note">Illustrated warning signs, not a live assessment. Run an example below to see Guardian’s analysis.</p>
+    </section>
+    <div class="demo-heading" id="demo"><h2>See Guardian in action</h2><span id="provider-badge" class="provider-badge">Checking demo mode…</span></div>
+    <section class="workspace" aria-label="Demo controls and assessment">
+      <div class="card">
+        <div class="tabs" role="tablist" aria-label="Ways to try Guardian"><button type="button" class="tab-button" data-tab="call" id="call-tab-button" role="tab" aria-controls="call-tab" tabindex="0" aria-selected="true">Call simulator</button><button type="button" class="tab-button" data-tab="message" id="message-tab-button" role="tab" aria-controls="message-tab" tabindex="-1" aria-selected="false">Paste a message</button><button type="button" class="tab-button" data-tab="listen" id="listen-tab-button" role="tab" aria-controls="listen-tab" tabindex="-1" aria-selected="false">Microphone</button></div>
+        <div id="live-control" class="controls" hidden><label for="judge-code">Live mode</label><input id="judge-code" type="password" autocomplete="off" placeholder="Judge access code"><button id="unlock-live" type="button">Unlock</button><span id="live-badge" class="provider-badge" hidden>LIVE</span><a href="#demo">Replay samples</a></div>
+        <p id="mode-note" class="note">Loading demo details…</p>
+        <div id="call-tab" role="tabpanel" aria-labelledby="call-tab-button" class="tab active">
+          <label for="scenario">Choose a scenario</label><select id="scenario" disabled><option value="">Loading examples…</option></select>
+          <div class="controls"><button id="start" type="button" disabled>Play sample call</button><button id="speed" type="button">Speed: 1×</button><button id="mute" type="button">Voice: off</button></div>
+        </div>
+        <div id="message-tab" role="tabpanel" aria-labelledby="message-tab-button" class="tab">
+          <p id="message-examples-label" class="note" style="margin:0 0 .3rem;">Try an example:</p>
+          <div id="message-examples" class="controls" style="margin-top:0; margin-bottom:.6rem;"></div>
+          <label for="message">SMS or WhatsApp message</label><textarea id="message" maxlength="2000" placeholder="Paste the message here"></textarea>
+          <div class="controls"><button id="analyse" type="button">Check message</button></div><p id="message-note" class="note"></p>
+        </div>
+        <div id="listen-tab" role="tabpanel" aria-labelledby="listen-tab-button" class="tab">
+          <label for="listen-lang">Language</label>
+          <select id="listen-lang">
+            <option value="en-US">en-US (English)</option>
+            <option value="pl-PL">pl-PL (Polski)</option>
+          </select>
+          <label for="listen-speaker">Who is speaking</label>
+          <div class="controls">
+            <button id="listen-speaker" type="button">Caller</button>
+            <button id="listen-start" type="button">Start listening</button>
+            <button id="listen-stop" type="button">Stop</button>
+          </div>
+          <label for="listen-text">Or type what was said</label>
+          <input id="listen-text" type="text" placeholder="Type what was said…" maxlength="2000">
+          <div class="controls">
+            <button id="listen-send" type="button">Add line</button>
+          </div>
+          <p id="listen-note" class="note">Microphone transcription uses your browser’s speech service and may need internet access. It does not connect to phone calls. To stay offline, type a line instead.</p>
+        </div>
+        <p id="status" class="status" aria-live="polite"></p>
+      </div>
+      <div id="risk" class="card risk" aria-live="polite" aria-atomic="true"><h2>Guardian’s assessment</h2><p class="score">Ready when you are</p><p id="warning" class="warning">Try an example to see the warning signs.<span id="advice-source" class="advice-source"></span></p><p id="action" class="action">Your next step will appear here.</p><p id="spoken-warning" class="note"></p></div>
+      <div id="relative" class="card relative"><h2>Family alert preview</h2><p class="note">The call button is a simulation; it does not place a phone call.</p><p id="relative-alert"></p><p id="relative-quotes"></p><button type="button" id="call-relative">Preview family call</button><p id="call-result" class="note"></p><p id="family-alert-status" class="note"></p></div>
+    </section>
+    <section class="card evidence"><h2>Why Guardian flagged it</h2><div class="evidence-grid"><div><h3>Warning signs</h3><p id="signals-source" class="note" style="display:none;"></p><div id="signals"><p>The exact phrases and their meaning will appear here.</p></div></div><div><h3>Supporting sources</h3><div id="sources"><p>Relevant guidance will appear with links and source labels.</p></div></div></div></section>
+    <footer><span>Built with NVIDIA Nemotron · Nebius Token Factory · Tavily</span><span>Hackathon prototype · An assessment is not a guarantee of safety.</span></footer>
+  </main>
+  <script>
+    (() => {
+      const state = { playing: false, listening: false, scenarios: [], speed: 1, muted: true, sessionId: null, turns: [], verdict: null, mode: 'call', warned: false };
+      const el = id => document.getElementById(id);
+      const status = text => { el('status').textContent = text; };
+      const request = async (url, options = {}) => {
+        const response = await fetch(url, {...options, signal:AbortSignal.timeout(20000)});
+        const payload = await response.json();
+        if (!response.ok) throw new Error(payload.error === 'live_daily_cap' ? 'The daily live limit has been reached. Choose a replay sample call or message example.' : payload.error === 'live_locked' ? 'Live mode is locked. Unlock with the judge code, or choose a replay sample.' : response.status === 429 ? 'Too many attempts. Try again in an hour, or choose a replay sample.' : 'We couldn’t complete this check. Please try again.');
+        return payload;
+      };
+      const addText = (parent, text) => parent.appendChild(document.createTextNode(text));
+      const safeLink = source => { try { const url = new URL(source.url); return url.protocol === 'http:' || url.protocol === 'https:' ? url : null; } catch (_) { return null; } };
+      function setBusy(busy) {
+        state.busy = busy;
+        document.querySelectorAll('.tab-button, #analyse, .example-button, #try-example, #start, #scenario, #listen-send, #listen-start, #message').forEach(button => { button.disabled = busy; });
+        el('risk').setAttribute('aria-busy', String(busy));
+        if (!busy) {
+          el('start').disabled = !state.scenarios.length;
+          el('scenario').disabled = !state.scenarios.length;
+          el('try-example').disabled = !state.examples?.length;
+          el('listen-start').disabled = !SpeechRecognition;
+        }
+      }
+      function updateMeter(level, label) {
+        el('meter-state').textContent = label;
+        el('meter-state').dataset.level = level || '';
+        document.querySelectorAll('.meter-track [data-level]').forEach(item => item.classList.toggle('active', item.dataset.level === level));
+      }
+      function resetAssessment() {
+        clearTimeout(previewTimer);
+        updateMeter(null, 'Checking…');
+        el('preview-label').textContent = 'Offline example';
+        el('call-title').textContent = state.mode === 'message' ? 'Message check' : 'Sample conversation';
+        el('caller-name').textContent = 'Demo · no real phone connection';
+        el('incoming').style.display = 'none';
+        el('transcript').style.display = 'block';
+        el('phone-note').textContent = 'Highlighted phrases are evidence from this check. An assessment is not a guarantee of safety.';
+        state.verdict = null;
+        el('risk').className = 'card risk';
+        el('risk').querySelector('.score').textContent = 'Checking for warning signs…';
+        el('warning').firstChild.textContent = 'Wait for the assessment before taking action.';
+        el('advice-source').textContent = '';
+        el('action').textContent = 'Do not share codes or move money under pressure.';
+        el('relative').classList.remove('visible');
+        el('call-result').textContent = '';
+        el('signals').replaceChildren(); el('sources').replaceChildren();
+        el('signals-source').style.display = 'none';
+        el('message-note').textContent = '';
+        state.turns = []; renderTranscript();
+      }
+      function checkFailed() {
+        updateMeter(null, 'Check incomplete');
+        el('risk').className = 'card risk';
+        el('risk').querySelector('.score').textContent = 'Check incomplete';
+        el('warning').firstChild.textContent = 'We could not finish this assessment. Please try again.';
+        el('advice-source').textContent = '';
+        el('action').textContent = 'Verify unexpected requests independently.';
+      }
+      function selectTab(button) {
+        if (state.busy) return;
+        if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+        state.listening = false;
+        if (recognition) { try { recognition.abort(); } catch (_) {} }
+        listenSessionActive = false;
+        document.querySelectorAll('.tab-button').forEach(item => { item.setAttribute('aria-selected', String(item === button)); item.tabIndex = item === button ? 0 : -1; });
+        document.querySelectorAll('.tab').forEach(item => item.classList.toggle('active', item.id === `${button.dataset.tab}-tab`));
+        status('');
+      }
+      function quotesFor(index) { return (state.verdict?.signals || []).filter(signal => signal.turn_index === index); }
+      function appendHighlighted(parent, text, signals) {
+        let cursor = 0; const lower = text.toLocaleLowerCase();
+        const matches = signals.map(s => ({ signal:s, at:lower.indexOf(s.quote.toLocaleLowerCase()) })).filter(m => m.at >= 0).sort((a,b) => a.at - b.at);
+        for (const match of matches) { if (match.at < cursor) continue; addText(parent, text.slice(cursor, match.at)); const mark = document.createElement('mark'); mark.title = match.signal.tactic.replaceAll('_', ' '); mark.setAttribute('aria-label', mark.title); mark.textContent = text.slice(match.at, match.at + match.signal.quote.length); parent.appendChild(mark); cursor = match.at + match.signal.quote.length; } addText(parent, text.slice(cursor));
+      }
+      function renderTranscript() { const box = el('transcript'); box.replaceChildren(); state.turns.forEach((turn, index) => { const bubble = document.createElement('div'); bubble.className = `bubble ${turn.speaker}`; const who = document.createElement('small'); who.textContent = turn.speaker === 'caller' ? (state.mode === 'message' ? 'Message' : 'Caller') : 'You'; const body = document.createElement('span'); appendHighlighted(body, turn.text, turn.speaker === 'caller' ? quotesFor(index) : []); bubble.append(who, body); box.appendChild(bubble); }); box.scrollTop = box.scrollHeight; }
+      function renderEvidence(verdict) {
+        const sourceEl = el('signals-source');
+        if (sourceEl) {
+          const provenanceMap = {
+            rules: 'Evidence found by offline rules (no AI model)',
+            nemotron: 'Evidence proposed by Nemotron, checked by code',
+            seeded: 'Hand-written example evidence'
+          };
+          const text = verdict.signals_source && verdict.signals.length ? provenanceMap[verdict.signals_source] : null;
+          if (text) {
+            sourceEl.textContent = text;
+            sourceEl.style.display = 'block';
+          } else {
+            sourceEl.textContent = '';
+            sourceEl.style.display = 'none';
+          }
+        }
+        const signals = el('signals');
+        signals.replaceChildren();
+        if (!verdict.signals.length) { const p = document.createElement('p'); p.textContent = 'No warning signs found in the text checked so far.'; signals.appendChild(p); }
+        verdict.signals.forEach(signal => { const item = document.createElement('div'); item.className = 'signal'; const tactic = document.createElement('strong'); tactic.textContent = signal.tactic.replaceAll('_', ' '); const quote = document.createElement('div'); quote.className = 'quote'; quote.textContent = `“${signal.quote}”`; const explanation = document.createElement('div'); explanation.textContent = signal.explanation; item.append(tactic, quote, explanation); signals.appendChild(item); });
+        const sources = el('sources');
+        sources.replaceChildren();
+        const validSources = verdict.sources.filter(safeLink);
+        if (!validSources.length) { const p = document.createElement('p'); p.textContent = 'No supporting sources for this assessment.'; sources.appendChild(p); }
+        validSources.forEach(source => { const item = document.createElement('div'); item.className = 'signal'; const link = document.createElement('a'); link.href = safeLink(source).href; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = source.title || source.domain; const detail = document.createElement('details'); const summary = document.createElement('summary'); summary.textContent = `Read excerpt · ${source.domain}`; const excerpt = document.createElement('p'); excerpt.textContent = source.snippet; detail.append(summary, excerpt); const origin = document.createElement('span'); origin.className = 'advice-source'; origin.textContent = source.seeded ? 'seeded · real page picked by hand, not a live Tavily result' : (state.live && !state.replay ? 'Found by Tavily' : 'Recorded Tavily result · not a live search'); item.append(link, origin, detail); sources.appendChild(item); });
+      }
+      function checkSpokenWarning(verdict) {
+        if (verdict.level === 'SCAM' && !state.warned) {
+          state.warned = true;
+          if (!state.muted) {
+            if ('speechSynthesis' in window) {
+              window.speechSynthesis.cancel();
+              const prefix = verdict.advice_language === 'pl' ? "Uwaga, Guardian. " : "Guardian warning. ";
+              const voice = new SpeechSynthesisUtterance(prefix + verdict.warning + " " + verdict.safe_action);
+              voice.lang = verdict.advice_language === 'pl' ? 'pl-PL' : 'en-US';
+              voice.rate = state.speed === 3 ? 1.25 : 1;
+              window.speechSynthesis.speak(voice);
+            }
+            el('spoken-warning').textContent = 'Voice warning requested. Playback depends on your browser.';
+          }
+        }
+      }
+      const FAMILY_ALERT_TEXT = { sent: 'Alert sent to the family on Telegram.', failed: 'Telegram alert could not be sent: call the family yourself.', rate_limited: 'Too many alerts recently: Telegram alert skipped.', not_configured: 'Telegram bot not set up: this alert is shown on screen only.' };
+      function showFamilyAlert(alert) { if (alert) el('family-alert-status').textContent = FAMILY_ALERT_TEXT[alert.status] || ''; }
+      function renderVerdict(verdict) {
+        state.verdict = verdict;
+        updateMeter(verdict.level, `${verdict.level} · score ${verdict.score}`);
+        const risk = el('risk');
+        risk.className = `card risk ${verdict.level}`;
+        risk.querySelector('.score').textContent = `${({SAFE:'No warning signs found',CAUTION:'Be cautious',SCAM:'Likely scam'})[verdict.level]} · score ${verdict.score}`;
+        el('warning').firstChild.textContent = verdict.warning;
+        el('advice-source').textContent = ({nemotron:state.live && !state.replay ? 'Advice by Nemotron' : 'Recorded Nemotron advice', seeded:'Example advice · not model output'})[verdict.advice_source] || 'Standard safety guidance';
+        el('action').textContent = verdict.safe_action;
+        renderEvidence(verdict);
+        renderTranscript();
+        const relative = el('relative');
+        relative.classList.toggle('visible', verdict.level === 'SCAM');
+        el('relative-alert').textContent = verdict.relative_alert;
+        el('relative-quotes').textContent = verdict.signals.map(s => `“${s.quote}”`).join(' · ');
+        checkSpokenWarning(verdict);
+      }
+      async function loadHealth() {
+        try {
+          const config = await request('/api/config');
+          state.live = config.live_unlocked;
+          state.liveAvailable = config.live_available;
+          el('live-control').hidden = !config.live_available;
+          el('live-badge').hidden = !state.live;
+          el('judge-code').hidden = state.live;
+          el('unlock-live').hidden = state.live;
+          el('provider-badge').textContent = state.live ? 'LIVE' : 'Offline demo · recorded examples';
+          el('mode-note').textContent = state.live ? 'Live analysis is enabled for your own text and microphone transcript. Samples use recorded answers. Family notifications depend on server configuration.' : config.live_available ? 'Examples use recorded answers. New text uses offline rules when no recording matches. Unlock Live mode for model and web search.' : 'Examples use recorded answers. New text uses offline rules when no recording matches. No live model or web search in this mode.';
+        } catch (_) { el('provider-badge').textContent = 'Demo mode unavailable'; }
+      }
+      el('unlock-live').addEventListener('click', async () => {
+        try {
+          await request('/api/unlock', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({code:el('judge-code').value})});
+          el('judge-code').value = '';
+          listenSessionActive = false;
+          await loadHealth();
+          status('Live mode unlocked.');
+        } catch (error) { el('judge-code').value = ''; status(error.message); }
+      });
+      loadHealth();
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!reducedMotion) updateMeter('CAUTION', 'Illustration · CAUTION');
+      const previewTimer = reducedMotion ? null : setTimeout(() => updateMeter('SCAM', 'Illustration · SCAM'), 2400);
+      function speak(turn) { if (state.muted || turn.speaker !== 'caller' || !('speechSynthesis' in window) || state.warned) return; window.speechSynthesis.cancel(); const voice = new SpeechSynthesisUtterance(turn.text); voice.rate = state.speed === 3 ? 1.25 : 1; window.speechSynthesis.speak(voice); }
+      const wait = ms => new Promise(resolve => setTimeout(resolve, Math.max(0, ms)));
+      async function play() {
+        const id = el('scenario').value;
+        const scenario = state.scenarios.find(item => item.id === id);
+        if (!scenario || state.playing) return;
+        state.mode = 'call';
+        state.replay = true;
+        state.playing = true;
+        setBusy(true); resetAssessment();
+        state.warned = false; el('family-alert-status').textContent = '';
+        listenSessionActive = false;
+        el('spoken-warning').textContent = '';
+        el('start').disabled = true;
+        try {
+          status('Preparing the example…');
+          const started = await request('/api/sessions', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({scenario_id:id}) });
+          state.sessionId = started.session_id;
+          state.turns = [];
+          state.verdict = null;
+          el('incoming').style.display = 'none';
+          el('transcript').style.display = 'block';
+          el('transcript').scrollIntoView({block:'center'});
+          let previousT = 0;
+          for (const turn of scenario.turns) {
+            await wait(((turn.t - previousT) * 1000) / state.speed);
+            previousT = turn.t;
+            speak(turn);
+            const result = await request(`/api/sessions/${encodeURIComponent(state.sessionId)}/turns`, { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({...turn, live:false, history:state.turns.map(({speaker, text, t}) => ({speaker, text, t}))}) });
+            state.turns.push(turn);
+            renderVerdict(result.verdict); showFamilyAlert(result.family_alert);
+            status(`Playing sample · ${state.turns.length} of ${scenario.turns.length} lines`);
+          }
+          status('Call complete. Review the evidence and safe action.');
+        } catch (error) {
+          checkFailed(); status(error.message);
+        } finally {
+          state.playing = false;
+          setBusy(false);
+          el('start').textContent = 'Replay sample call';
+        }
+      }
+      async function analyseMessage() {
+        if (state.busy) return;
+        if (!el('message').value.trim()) { status('Paste a message or choose an example first.'); el('message').focus(); return; }
+        state.mode = 'message';
+        state.replay = state.examples?.some(item => item.text === el('message').value);
+        setBusy(true); resetAssessment();
+        el('analyse').textContent = 'Checking…';
+        state.warned = false; el('family-alert-status').textContent = '';
+        listenSessionActive = false;
+        el('spoken-warning').textContent = '';
+        try {
+          status('Checking message…');
+          const result = await request('/api/message', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({text:el('message').value, live:!!state.live}) });
+          state.mode = 'message';
+          state.turns = [{speaker:'caller', text:el('message').value, t:0}];
+          el('incoming').style.display = 'none';
+          el('transcript').style.display = 'block';
+          renderVerdict(result.verdict); showFamilyAlert(result.family_alert);
+          el('message-note').textContent = result.note || '';
+          status('Message checked. Read the assessment below.');
+        } catch (error) {
+          checkFailed(); status(error.message);
+        } finally { setBusy(false); el('analyse').textContent = 'Check message'; }
+      }
+
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      let recognition = null;
+      let listenSpeaker = 'caller';
+      let listenSessionActive = false;
+      let listenStartTime = 0;
+
+      // Speech results can arrive back to back: send turns one at a time so each carries the full history.
+      let listenQueue = Promise.resolve();
+      function queueListenTurn(text) { listenQueue = listenQueue.then(() => sendListenTurn(text)); return listenQueue; }
+
+      async function sendListenTurn(text) {
+        text = (text || '').trim();
+        if (!text) return;
+        state.mode = 'call';
+        state.replay = false;
+        setBusy(true);
+        try {
+          if (!listenSessionActive || !state.sessionId) {
+            resetAssessment();
+            status('Preparing the example…');
+            const started = await request('/api/sessions', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({live:!!state.live})
+            });
+            state.sessionId = started.session_id;
+            listenSessionActive = true;
+            listenStartTime = Date.now();
+            state.turns = [];
+            state.verdict = null;
+            state.warned = false; el('family-alert-status').textContent = '';
+            el('spoken-warning').textContent = '';
+            el('incoming').style.display = 'none';
+            el('transcript').style.display = 'block';
+          }
+          const t = Math.max(0, Math.floor((Date.now() - listenStartTime) / 1000));
+          const speaker = listenSpeaker;
+          const turn = { speaker, text, t };
+          const result = await request(`/api/sessions/${encodeURIComponent(state.sessionId)}/turns`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              live:!!state.live,
+              speaker,
+              text,
+              t,
+              history: state.turns.map(({ speaker, text, t }) => ({ speaker, text, t }))
+            })
+          });
+          state.turns.push(turn);
+          renderVerdict(result.verdict); showFamilyAlert(result.family_alert);
+          status(state.listening ? `Listening (${listenSpeaker === 'caller' ? 'Caller' : 'Me'})…` : 'Turn processed.');
+        } catch (error) {
+          checkFailed(); status(error.message);
+        } finally { setBusy(false); }
+      }
+
+      function startRecognition() {
+        if (!SpeechRecognition) return;
+        if (recognition) {
+          try { recognition.abort(); } catch (_) {}
+        }
+        recognition = new SpeechRecognition();
+        recognition.continuous = true;
+        recognition.interimResults = false;
+        recognition.lang = el('listen-lang').value;
+        recognition.onresult = (event) => {
+          for (let i = event.resultIndex; i < event.results.length; i++) {
+            if (state.listening && event.results[i].isFinal) {
+              const text = event.results[i][0].transcript.trim();
+              if (text) queueListenTurn(text);
+            }
+          }
+        };
+        recognition.onerror = (event) => {
+          state.listening = false; status('Microphone unavailable. Check browser permissions or type a line below.');
+        };
+        recognition.onend = () => {
+          if (state.listening) {
+            try {
+              recognition.start();
+            } catch (_) {}
+          }
+        };
+        try {
+          recognition.start();
+        } catch (error) {
+          checkFailed(); status('We couldn’t complete this check. Please try again.');
+        }
+      }
+
+      if (!SpeechRecognition) {
+        el('listen-note').textContent = 'Microphone transcription is unavailable in this browser. Type a line below to try the same check.';
+        el('listen-start').disabled = true;
+      }
+
+      el('listen-speaker').addEventListener('click', () => {
+        if (listenSpeaker === 'caller') {
+          listenSpeaker = 'elder';
+          el('listen-speaker').textContent = 'Me';
+        } else {
+          listenSpeaker = 'caller';
+          el('listen-speaker').textContent = 'Caller';
+        }
+        if (state.listening) {
+          status(`Listening (${el('listen-speaker').textContent})…`);
+        }
+      });
+
+      el('listen-start').addEventListener('click', () => {
+        if (!SpeechRecognition) {
+          status('Speech recognition is not supported in this browser.');
+          return;
+        }
+        state.listening = true;
+        listenSessionActive = false;
+        startRecognition();
+        status(`Listening (${el('listen-speaker').textContent})…`);
+      });
+
+      el('listen-stop').addEventListener('click', () => {
+        state.listening = false;
+        listenSessionActive = false;
+        if (recognition) {
+          try { recognition.stop(); } catch (_) {}
+        }
+        status('Listening stopped.');
+      });
+
+      el('listen-send').addEventListener('click', () => {
+        const input = el('listen-text');
+        const text = input.value.trim();
+        if (text) {
+          input.value = '';
+          queueListenTurn(text);
+        } else { status('Type a line to check first.'); input.focus(); }
+      });
+
+      el('listen-text').addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          el('listen-send').click();
+        }
+      });
+
+      el('listen-lang').addEventListener('change', () => {
+        if (state.listening && recognition) {
+          recognition.lang = el('listen-lang').value;
+          try { recognition.stop(); } catch (_) {}
+        }
+      });
+
+      document.querySelectorAll('.tab-button').forEach((button, index, buttons) => {
+        button.addEventListener('click', () => selectTab(button));
+        button.addEventListener('keydown', event => {
+          const next = event.key === 'ArrowRight' ? (index + 1) % buttons.length : event.key === 'ArrowLeft' ? (index + buttons.length - 1) % buttons.length : event.key === 'Home' ? 0 : event.key === 'End' ? buttons.length - 1 : null;
+          if (next !== null) { event.preventDefault(); selectTab(buttons[next]); buttons[next].focus(); }
+        });
+      });
+      el('start').addEventListener('click', play); el('analyse').addEventListener('click', analyseMessage); el('speed').addEventListener('click', () => { state.speed = state.speed === 1 ? 3 : 1; el('speed').textContent = `Speed: ${state.speed}×`; }); el('mute').addEventListener('click', () => { state.muted = !state.muted; if (state.muted && 'speechSynthesis' in window) window.speechSynthesis.cancel(); el('mute').textContent = `Voice: ${state.muted ? 'off' : 'on'}`; }); el('call-relative').addEventListener('click', () => { el('call-result').textContent = 'This is a visual demo: no real call was placed.'; });
+      request('/api/scenarios').then(items => { state.scenarios = items; const select = el('scenario'); select.replaceChildren(); select.disabled = !items.length; el('start').disabled = !items.length; items.forEach(item => { const option = document.createElement('option'); option.value = item.id; option.textContent = item.title; select.appendChild(option); });  }).catch(error => status(error.message));
+      request('/api/message-examples').then(examples => { state.examples = examples; el('try-example').disabled = !examples.length; const container = el('message-examples'); examples.forEach(item => { const button = document.createElement('button'); button.type = 'button'; button.className = 'example-button'; button.textContent = item.title; button.addEventListener('click', () => { el('message').value = item.text; analyseMessage(); }); container.appendChild(button); }); }).catch(error => status(error.message));
+
+      el('try-example').addEventListener('click', () => {
+        if (!state.examples?.length || state.busy) return;
+        selectTab(el('message-tab-button'));
+        el('message').value = state.examples[0].text;
+        analyseMessage();
+        el('demo').scrollIntoView({block:'start'});
+        el('message-tab-button').focus({preventScroll:true});
+      });
+    })();
+  </script>
+</body>
+</html>

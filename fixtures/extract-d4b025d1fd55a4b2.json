@@ -1,0 +1,39 @@
+{
+  "request": {
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Hello?",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Grandma, please do not worry, this is about your grandson Marek.",
+        "t": 4.0
+      },
+      {
+        "speaker": "elder",
+        "text": "What happened to him?",
+        "t": 8.0
+      },
+      {
+        "speaker": "caller",
+        "text": "He had a car accident near Krakow and needs help immediately.",
+        "t": 12.0
+      },
+      {
+        "speaker": "elder",
+        "text": "Can I speak to him?",
+        "t": 16.0
+      },
+      {
+        "speaker": "caller",
+        "text": "I am his lawyer. A courier will collect 8,000 zloty in cash for the hospital today.",
+        "t": 22.0
+      }
+    ]
+  },
+  "content": "{\"signals\": [{\"tactic\": \"impersonation_authority\", \"quote\": \"I am his lawyer.\", \"explanation\": \"Claims to be a lawyer, presenting themselves as an authority figure.\"}, {\"tactic\": \"urgency_pressure\", \"quote\": \"needs help immediately.\", \"explanation\": \"States the grandson needs help immediately, creating pressure to act quickly.\"}, {\"tactic\": \"money_transfer_request\", \"quote\": \"A courier will collect 8,000 zloty in cash for the hospital today.\", \"explanation\": \"Requests money to be collected for the hospital.\"}, {\"tactic\": \"cash_handover_courier\", \"quote\": \"A courier will collect 8,000 zloty in cash for the hospital today.\", \"explanation\": \"Asks for cash to be handed over to a courier.\"}]}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

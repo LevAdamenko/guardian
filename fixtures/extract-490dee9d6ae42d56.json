@@ -1,0 +1,29 @@
+{
+  "request": {
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Hi, who is this?",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Hi auntie, it is your friend Anna. I need help urgently.",
+        "t": 3.0
+      },
+      {
+        "speaker": "elder",
+        "text": "What happened?",
+        "t": 6.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Please send me the BLIK code from your banking app so I can pay now.",
+        "t": 10.0
+      }
+    ]
+  },
+  "content": "{\"signals\": [{\"tactic\": \"impersonation_family\", \"quote\": \"it is your friend Anna\", \"explanation\": \"Caller pretends to be a friend/family member.\"}, {\"tactic\": \"urgency_pressure\", \"quote\": \"I need help urgently\", \"explanation\": \"Caller pressures immediate action by stating urgent need.\"}, {\"tactic\": \"blik_code_request\", \"quote\": \"send me the BLIK code from your banking app\", \"explanation\": \"Caller asks for a BLIK code from the victim’s banking app.\"}]}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

@@ -1,0 +1,39 @@
+{
+  "request": {
+    "verdict": {
+      "level": "SAFE",
+      "score": 0,
+      "signals": [],
+      "sources": [],
+      "warning": "",
+      "relative_alert": "",
+      "safe_action": "",
+      "advice_source": "fallback"
+    },
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Hello.",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "This is the bank calling to remind you about your branch appointment on Tuesday.",
+        "t": 4.0
+      },
+      {
+        "speaker": "elder",
+        "text": "Thank you, what time is it?",
+        "t": 8.0
+      },
+      {
+        "speaker": "caller",
+        "text": "It is at ten. Please bring your identification to the branch.",
+        "t": 12.0
+      }
+    ]
+  },
+  "content": "{\"warning\": \"This call seems like a normal bank reminder; no signs of a scam were found.\", \"relative_alert\": \"No suspicious tactics were detected; the caller only gave a routine appointment reminder.\", \"safe_action\": \"If you wish to confirm, call your bank using the number on your statement or visit the branch in person.\"}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

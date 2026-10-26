@@ -1,0 +1,19 @@
+{
+  "request": {
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Hi, who is this?",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Hi auntie, it is your friend Anna. I need help urgently.",
+        "t": 3.0
+      }
+    ]
+  },
+  "content": "{\"signals\": [{\"tactic\": \"urgency_pressure\", \"quote\": \"I need help urgently\", \"explanation\": \"Pressures the person to act immediately by stating urgent need for help.\"}]}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

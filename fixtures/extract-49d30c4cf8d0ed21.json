@@ -1,0 +1,39 @@
+{
+  "request": {
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Good afternoon.",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "This is CBŚP police officer Kowalski calling about your savings.",
+        "t": 3.0
+      },
+      {
+        "speaker": "elder",
+        "text": "Is something wrong?",
+        "t": 7.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Your bank account is at risk, so move the money to our safe account now.",
+        "t": 11.0
+      },
+      {
+        "speaker": "elder",
+        "text": "Should I call my bank?",
+        "t": 16.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Do not tell anyone because this police operation is secret.",
+        "t": 20.0
+      }
+    ]
+  },
+  "content": "{\"signals\": [{\"tactic\": \"impersonation_authority\", \"quote\": \"police officer Kowalski\", \"explanation\": \"Claims to be a police officer, an authority figure.\"}, {\"tactic\": \"safe_account\", \"quote\": \"move the money to our safe account now\", \"explanation\": \"Directs the victim to transfer money to a purported safe account.\"}, {\"tactic\": \"urgency_pressure\", \"quote\": \"Your bank account is at risk, so move the money to our safe account now\", \"explanation\": \"States the account is at risk and demands immediate action.\"}, {\"tactic\": \"secrecy_request\", \"quote\": \"Do not tell anyone because this police operation is secret\", \"explanation\": \"Instructs the victim to keep the matter secret.\"}]}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

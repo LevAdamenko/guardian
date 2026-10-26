@@ -1,0 +1,14 @@
+{
+  "request": {
+    "transcript": [
+      {
+        "speaker": "caller",
+        "text": "Hi, it's Kasia. My card got blocked at the checkout and I need help urgently. Please send me the BLIK code from your banking app, I will pay you back tonight.",
+        "t": 0.0
+      }
+    ]
+  },
+  "content": "{\"signals\": [{\"tactic\": \"impersonation_family\", \"quote\": \"Hi, it's Kasia.\", \"explanation\": \"Claims to be a known person (family/friend) to gain trust.\"}, {\"tactic\": \"urgency_pressure\", \"quote\": \"I need help urgently\", \"explanation\": \"Pressures immediate action by stating an urgent need.\"}, {\"tactic\": \"blik_code_request\", \"quote\": \"Please send me the BLIK code from your banking app\", \"explanation\": \"Requests a BLIK code from the victim's banking app.\"}]}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

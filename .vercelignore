@@ -1,0 +1,8 @@
+.venv
+.git
+tests
+docs
+scripts
+*.png
+.env
+.env.*

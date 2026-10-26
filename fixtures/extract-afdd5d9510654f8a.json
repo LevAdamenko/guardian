@@ -1,0 +1,19 @@
+{
+  "request": {
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Hello.",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "This is the bank calling to remind you about your branch appointment on Tuesday.",
+        "t": 4.0
+      }
+    ]
+  },
+  "content": "{\"signals\": []}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

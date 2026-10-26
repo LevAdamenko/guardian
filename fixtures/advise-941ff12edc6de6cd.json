@@ -1,0 +1,51 @@
+{
+  "request": {
+    "verdict": {
+      "level": "SAFE",
+      "score": 1,
+      "signals": [
+        {
+          "tactic": "urgency_pressure",
+          "quote": "I need help urgently",
+          "explanation": "Pressures the person to act immediately by stating urgent need for help.",
+          "turn_index": 1
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://radomsko.policja.gov.pl/era/informacje/60271,Seniorze-nie-daj-sie-oszukac.html",
+          "title": "Seniorze - nie daj się oszukać! - Informacje",
+          "snippet": "Nigdy nie ulegaj presji czasu wywieranej przez oszustów. Pamiętaj: Policja nigdy nie prowadzi działań operacyjnych przez telefon! Policja nigdy nie wymaga",
+          "domain": "radomsko.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://malopolska.policja.gov.pl/krk/aktualnosci/aktualnosci/54555,SENIORZE-NIE-DAJ-SIE-OSZUKAC-Porady-Prewencyjne.html",
+          "title": "SENIORZE- NIE DAJ SIĘ OSZUKAĆ! Porady Prewencyjne.",
+          "snippet": "1. Nie działaj pod presją czasu. Oszuści celowo wywierają presję, by nie dać czasu na zastanowienie. · 2. Sprawdź kto dzwoni. · 3. Nie przekazuj",
+          "domain": "malopolska.policja.gov.pl",
+          "seeded": false
+        }
+      ],
+      "warning": "",
+      "relative_alert": "",
+      "safe_action": "",
+      "advice_source": "fallback"
+    },
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Hi, who is this?",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Hi auntie, it is your friend Anna. I need help urgently.",
+        "t": 3.0
+      }
+    ]
+  },
+  "content": "{\"warning\": \"Hello, it’s fine to pause and make sure you’re speaking with someone you know before responding.\", \"relative_alert\": \"Tell them to check the caller’s identity when they feel urgency pressure.\", \"safe_action\": \"Ask the caller for a personal detail only your real friend would know, then decide if you want to continue.\"}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

@@ -1,0 +1,12 @@
+.git
+.venv
+.env
+.env.*
+**/__pycache__
+.pytest_cache
+data
+*.sqlite3
+*.egg-info
+graphify-out
+.agents
+.codex

@@ -1,0 +1,24 @@
+{
+  "request": {
+    "verdict": {
+      "level": "SAFE",
+      "score": 0,
+      "signals": [],
+      "sources": [],
+      "warning": "",
+      "relative_alert": "",
+      "safe_action": "",
+      "advice_source": "fallback"
+    },
+    "transcript": [
+      {
+        "speaker": "caller",
+        "text": "InPost: your parcel is waiting in locker KRA01M until Friday. Pickup code: 482915.",
+        "t": 0.0
+      }
+    ]
+  },
+  "content": "{\"warning\": \"This is a regular delivery notice; you can ignore it or keep it for reference.\", \"relative_alert\": \"Tell them this is a standard delivery notice and no suspicious tactics were detected.\", \"safe_action\": \"Keep the message for your records and take no further action.\"}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

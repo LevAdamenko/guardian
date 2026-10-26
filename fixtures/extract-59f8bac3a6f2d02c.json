@@ -1,0 +1,19 @@
+{
+  "request": {
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Hello darling.",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Hi Grandma, it is your grandson Adam. Are we still having Sunday dinner?",
+        "t": 4.0
+      }
+    ]
+  },
+  "content": "{\"signals\": [{\"tactic\": \"impersonation_family\", \"quote\": \"it is your grandson\", \"explanation\": \"Caller pretends to be a family member (grandson).\"}]}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

@@ -1,0 +1,39 @@
+{
+  "request": {
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Hello.",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "I am from your bank security department about a suspicious loan.",
+        "t": 4.0
+      },
+      {
+        "speaker": "elder",
+        "text": "I did not request a loan.",
+        "t": 8.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Install AnyDesk now so our technician can secure your account.",
+        "t": 13.0
+      },
+      {
+        "speaker": "elder",
+        "text": "Why do I need that?",
+        "t": 18.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Please act immediately or the loan will be approved.",
+        "t": 22.0
+      }
+    ]
+  },
+  "content": "{\"signals\": [{\"tactic\": \"impersonation_bank\", \"quote\": \"I am from your bank\", \"explanation\": \"Claims to represent a bank.\"}, {\"tactic\": \"remote_access_install\", \"quote\": \"Install AnyDesk now so our technician can secure your account\", \"explanation\": \"Requests installation of remote-access software.\"}, {\"tactic\": \"urgency_pressure\", \"quote\": \"Please act immediately\", \"explanation\": \"Pressures the person to act immediately.\"}]}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

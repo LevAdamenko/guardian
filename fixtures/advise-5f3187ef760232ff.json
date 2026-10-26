@@ -1,0 +1,49 @@
+{
+  "request": {
+    "verdict": {
+      "level": "SAFE",
+      "score": 0,
+      "signals": [],
+      "sources": [],
+      "warning": "",
+      "relative_alert": "",
+      "safe_action": "",
+      "advice_source": "fallback"
+    },
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Hello darling.",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Hi Grandma, it is your grandson Adam. Are we still having Sunday dinner?",
+        "t": 4.0
+      },
+      {
+        "speaker": "elder",
+        "text": "Of course, at two o'clock.",
+        "t": 8.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Wonderful, I will bring apple cake and see you then.",
+        "t": 12.0
+      },
+      {
+        "speaker": "elder",
+        "text": "I look forward to it.",
+        "t": 16.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Me too. Goodbye, Grandma.",
+        "t": 20.0
+      }
+    ]
+  },
+  "content": "{\"warning\": \"This sounds like a friendly chat with your grandson; nothing suspicious was detected.\", \"relative_alert\": \"Let them know the call showed no suspicious tactics.\", \"safe_action\": \"Continue your plans as usual; no further steps are required.\"}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

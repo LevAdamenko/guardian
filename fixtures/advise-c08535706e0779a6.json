@@ -1,0 +1,121 @@
+{
+  "request": {
+    "verdict": {
+      "level": "SCAM",
+      "score": 18,
+      "signals": [
+        {
+          "tactic": "impersonation_authority",
+          "quote": "This is CBŚP police officer",
+          "explanation": "Claims to be a police officer.",
+          "turn_index": 1
+        },
+        {
+          "tactic": "money_transfer_request",
+          "quote": "move the money to our safe account",
+          "explanation": "Requests transferring money.",
+          "turn_index": 3
+        },
+        {
+          "tactic": "safe_account",
+          "quote": "our safe account",
+          "explanation": "Refers to a supposed safe account as the destination for funds.",
+          "turn_index": 3
+        },
+        {
+          "tactic": "urgency_pressure",
+          "quote": "move the money to our safe account now",
+          "explanation": "Pressures the person to act immediately.",
+          "turn_index": 3
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://leczyca.policja.gov.pl/ele/informacje/94269,Oszustwa-na-quotPolicjanta-CBSPquot-APELUJEMY-i-OSTRZEGAMY.html",
+          "title": "Oszustwa na \"Policjanta CBŚP\". APELUJEMY i ...",
+          "snippet": "Policjanci ostrzegają przed oszustami działającymi metodą na „Policjanta CBŚ”. ... Policja nigdy nie poprosi o przekazanie komuś pieniędzy, czy też",
+          "domain": "leczyca.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://policja.pl/pol/aktualnosci/121167,Podawali-sie-za-oficerow-CBSP-i-oszukiwali-seniorow.html",
+          "title": "Podawali się za oficerów CBŚP i oszukiwali seniorów",
+          "snippet": "Oszust działał metodą \"na funkcjonariusza CBŚ\", przed którą Policja wielokrotnie ostrzegała. Zazwyczaj sprawca posługuje się tym samym schematem. Dzwoni na",
+          "domain": "policja.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://monki.policja.gov.pl/p10/aktualnosci/106311,POLICJA-OSTRZEGA-OSZUSTWO-METODA-NA-POLICJANTA-WNUCZKA-PRACOWNIKA-BANKU.html",
+          "title": "POLICJA OSTRZEGA! OSZUSTWO METODĄ NA POLICJANTA, WNUCZKA, PRACOWNIKA BANKU !!!!! - Aktualności KPP Mońki",
+          "snippet": "Chwilę po zakończeniu pierwszej rozmowy do ofiary dzwoni kolejna - podając się za funkcjonariusza CBŚ lub Policji. Na ogół przestępca informuje rozmówcę o tym, że jest potencjalną ofiarą oszustwa. Mówi, że poprzednia rozmowa telefoniczna była próbą wyłudzenia pieniędzy. Informuje o tym, że oszust został namierzony. Nalega, aby osoba pokrzywdzona wypłaciła określoną sumę pieniędzy z banku i przekazała ją wyznaczonej osobie lub prosi o wykonanie przelewu bankowego na wskazany numer konta. [...] Tuż po przekazaniu pieniędzy kontakt się urywa, a przestępcy znikają ze wszystkimi oszczędnościami ofiary.\n\nJak nie stać się ofiarą oszustów?\n\nPrzede wszystkim należy zachować ostrożność – jeżeli dzwoni do nas ktoś, kto podszywa się pod członka naszej rodziny i prosi o pieniądze, nie podejmujmy żadnych pochopnych działań. Nie informujmy nikogo telefonicznie o ilości pieniędzy, które mamy w domu lub jakie przechowujemy na koncie. Nie wypłacajmy z banku wszystkich oszczędności. [...] Zadzwońmy do kogoś z rodziny, zapytajmy o to czy osoba, która prosiła nas o pomoc, rzeczywiście jej potrzebuje. Pamiętajmy, że nikt nie będzie nam miał za złe tego, że zachowujemy się rozsądnie. Nie ulegajmy presji czasu wywieranej przez oszustów.\n\nW szczególności pamiętajmy o tym, że funkcjonariusze Policji NIGDY nie informują o prowadzonych przez siebie sprawach telefonicznie! Nigdy nie proszą też o przekazanie pieniędzy nieznanej osobie.",
+          "domain": "monki.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://zlotoryja.policja.gov.pl/dzl/aktualnosci/bieza/166303,Nowa-metoda-oszustwa-na-BLIK-Mozesz-nieswiadomie-stac-sie-posrednikiem-przesteps.html",
+          "title": "Nowa metoda oszustwa „na BLIK” ! Możesz nieświadomie stać się pośrednikiem przestępstwa - Komenda Powiatowa Policji w Złotoryi - Portal polskiej Policji",
+          "snippet": "Jak się uchronić?\n\nPolicja radzi:\n\n Nie odsyłaj pieniędzy na inny numer telefonu ani na inne konto „na prośbę” telefoniczną,\n Nie działaj pod presją czasu ani emocji – to typowa metoda manipulacji,\n Skontaktuj się niezwłocznie ze swoim bankiem i zgłoś podejrzany przelew,\n W przypadku wątpliwości poinformuj Policję.\n\nPamiętaj, że uczciwy błąd w przelewie powinien być wyjaśniany za pośrednictwem banku, a nie prywatnych telefonów. [...] Data publikacji 09.02.2026\n\nPowrót \"Powrót\")\n\nDrukuj \"Drukuj\")\n\nPolicja ostrzega przed nową i coraz częściej stosowaną metodą oszustwa z wykorzystaniem systemu płatności BLIK. Przestępcy wykorzystują uczciwość i pośpiech przypadkowych osób, wciągając je – często nieświadomie – w proceder przestępczy. [...] Na czym polega oszustwo?  \n Na konto bankowe niczego nieświadomej osoby wpływają pieniądze, których nie oczekiwała – najczęściej w formie przelewu BLIK. Po chwili dzwoni osoba podająca się za nadawce środków i informuję o „pomyłce”, prosząc o szybki zwrot pieniędzy na inny numer telefonu powiązany z BLIKIEM.",
+          "domain": "zlotoryja.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://nowydworgdanski.policja.gov.pl/pm9/informacje/147715,Bezpieczna-bankowosc-internetowa-Policja-ostrzega-i-przypomina.html",
+          "title": "Bezpieczna bankowość internetowa – Policja ostrzega i przypomina - Informacje Komenda Powiatowa Policji w Nowym Dworze Gdańskim",
+          "snippet": "W ostatnich miesiącach rośnie liczba zgłoszeń dotyczących oszustw związanych z bankowością elektroniczną. Sprawcy podszywają się pod banki, wysyłają fałszywe SMS-y i e-maile, a także telefonują do potencjalnych ofiar, nakłaniając je do zainstalowania aplikacji umożliwiających przejęcie kontroli nad telefonem lub komputerem.\n\nNajczęstsze metody działania oszustów to:\n\n fałszywe powiadomienia o \"podejrzanych logowaniach\" i konieczności \"zabezpieczenia konta\", [...] Jeśli padłeś ofiarą oszustwa – niezwłocznie powiadom Policję i skontaktuj się ze swoim bankiem.\n\n \n\nPowrót na górę strony [...] Drukuj \"Drukuj\")\n\nCoraz więcej osób korzysta z bankowości internetowej i mobilnej. To szybkie i wygodne rozwiązanie, ale niestety wiąże się również z ryzykiem oszustw. Policja apeluje o ostrożność i przypomina podstawowe zasady, które pozwolą uniknąć utraty oszczędności.",
+          "domain": "nowydworgdanski.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://www.zbp.pl/aktualnosci/wydarzenia/komunikat-fincert-pl-21-07",
+          "title": "Oszustwo, które widzisz. Uważaj na wideorozmowy",
+          "snippet": "Nigdy nie przelewaj pieniędzy na polecenie rozmówcy – bank nigdy nie prosi o przekazanie środków w celu ich „zabezpieczenia” na konto techniczne lub „bezpieczne”.\n Policja ani bank nie prowadzą „akcji”, które wymagają przelewów klientów.\n Nie działaj pod presją – oszuści celowo wywołują pośpiech i stres.\n Dokładnie sprawdzaj szczegóły każdej transakcji przed jej zatwierdzeniem.\n Nie udostępniaj danych do logowania ani kodów autoryzacyjnych. [...] Sygnały ostrzegawcze\n\n Nieoczekiwany kontakt wideo od „policjanta” lub „pracownika banku”\n Rozmówca wywiera presję i mówi o pilnej konieczności działania\n Informacja o rzekomym zagrożeniu środków lub kredycie „na Twoje dane”\n Prośba o udział w „tajnej akcji policyjnej”\n Prośba o przesłanie pieniędzy na „konto techniczne” lub „bezpieczne” – w celu ich ochrony\n Niespójności w informacjach lub dziwne zachowanie rozmówcy (np. nienaturalny obraz, sztuczność postaci)\n\nJak się chronić [...] 3. Dodatkowy kontakt z „pracownikiem banku” – potencjalna ofiara może zostać połączona z kolejną osobą podszywającą się pod pracownika banku (np. poprzez komunikator), która potwierdza wersję oszusta i wzmacnia siłę manipulacji.\n4. Budowanie presji – sprawca przekonuje, że środki na koncie są zagrożone i konieczne jest natychmiastowe działanie.\n5. Fałszywe „konto techniczne” – sprawca nakłania do przelania środków na wskazany rachunek, określany jako „techniczny” lub „bezpieczny”.",
+          "domain": "www.zbp.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://radomsko.policja.gov.pl/era/informacje/60271,Seniorze-nie-daj-sie-oszukac.html",
+          "title": "Seniorze - nie daj się oszukać! - Informacje",
+          "snippet": "Nigdy nie ulegaj presji czasu wywieranej przez oszustów. Pamiętaj: Policja nigdy nie prowadzi działań operacyjnych przez telefon! Policja nigdy nie wymaga",
+          "domain": "radomsko.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://malopolska.policja.gov.pl/krk/aktualnosci/aktualnosci/54555,SENIORZE-NIE-DAJ-SIE-OSZUKAC-Porady-Prewencyjne.html",
+          "title": "SENIORZE- NIE DAJ SIĘ OSZUKAĆ! Porady Prewencyjne.",
+          "snippet": "1. Nie działaj pod presją czasu. Oszuści celowo wywierają presję, by nie dać czasu na zastanowienie. · 2. Sprawdź kto dzwoni. · 3. Nie przekazuj",
+          "domain": "malopolska.policja.gov.pl",
+          "seeded": false
+        }
+      ],
+      "warning": "",
+      "relative_alert": "",
+      "safe_action": "",
+      "advice_source": "fallback"
+    },
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Good afternoon.",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "This is CBŚP police officer Kowalski calling about your savings.",
+        "t": 3.0
+      },
+      {
+        "speaker": "elder",
+        "text": "Is something wrong?",
+        "t": 7.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Your bank account is at risk, so move the money to our safe account now.",
+        "t": 11.0
+      }
+    ]
+  },
+  "content": "{\"warning\": \"This call is a scam; they pretend to be police and ask you to move money now—do not comply.\", \"relative_alert\": \"Alert them that the caller impersonated police and demanded an urgent money transfer to a 'safe' account.\", \"safe_action\": \"Hang up, do not transfer any money, and call your bank or a trusted family member using a known number.\"}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

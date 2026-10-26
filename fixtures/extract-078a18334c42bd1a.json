@@ -1,0 +1,39 @@
+{
+  "request": {
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Hi, who is this?",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Hi auntie, it is your friend Anna. I need help urgently.",
+        "t": 3.0
+      },
+      {
+        "speaker": "elder",
+        "text": "What happened?",
+        "t": 6.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Please send me the BLIK code from your banking app so I can pay now.",
+        "t": 10.0
+      },
+      {
+        "speaker": "elder",
+        "text": "I can call you instead.",
+        "t": 14.0
+      },
+      {
+        "speaker": "caller",
+        "text": "No, do it quickly, I am embarrassed and cannot talk.",
+        "t": 18.0
+      }
+    ]
+  },
+  "content": "{\"signals\": [{\"tactic\": \"urgency_pressure\", \"quote\": \"I need help urgently.\", \"explanation\": \"Pressures the person to act immediately.\"}, {\"tactic\": \"blik_code_request\", \"quote\": \"Please send me the BLIK code from your banking app so I can pay now.\", \"explanation\": \"Asks for a BLIK code from a banking app.\"}, {\"tactic\": \"urgency_pressure\", \"quote\": \"No, do it quickly, I am embarrassed and cannot talk.\", \"explanation\": \"Pressures the person to act immediately.\"}]}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

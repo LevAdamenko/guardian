@@ -1,0 +1,29 @@
+{
+  "request": {
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Hello?",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Grandma, please do not worry, this is about your grandson Marek.",
+        "t": 4.0
+      },
+      {
+        "speaker": "elder",
+        "text": "What happened to him?",
+        "t": 8.0
+      },
+      {
+        "speaker": "caller",
+        "text": "He had a car accident near Krakow and needs help immediately.",
+        "t": 12.0
+      }
+    ]
+  },
+  "content": "{\"signals\": [{\"tactic\": \"urgency_pressure\", \"quote\": \"needs help immediately\", \"explanation\": \"The caller states that Marek needs help immediately, creating pressure to act urgently.\"}]}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

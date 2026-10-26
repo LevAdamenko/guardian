@@ -1,0 +1,51 @@
+{
+  "request": {
+    "verdict": {
+      "level": "CAUTION",
+      "score": 4,
+      "signals": [
+        {
+          "tactic": "impersonation_authority",
+          "quote": "CBŚP police officer Kowalski",
+          "explanation": "The caller pretends to be a police officer, claiming authority from CBŚP.",
+          "turn_index": 1
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://leczyca.policja.gov.pl/ele/informacje/94269,Oszustwa-na-quotPolicjanta-CBSPquot-APELUJEMY-i-OSTRZEGAMY.html",
+          "title": "Oszustwa na \"Policjanta CBŚP\". APELUJEMY i ...",
+          "snippet": "Policjanci ostrzegają przed oszustami działającymi metodą na „Policjanta CBŚ”. ... Policja nigdy nie poprosi o przekazanie komuś pieniędzy, czy też",
+          "domain": "leczyca.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://policja.pl/pol/aktualnosci/121167,Podawali-sie-za-oficerow-CBSP-i-oszukiwali-seniorow.html",
+          "title": "Podawali się za oficerów CBŚP i oszukiwali seniorów",
+          "snippet": "Oszust działał metodą \"na funkcjonariusza CBŚ\", przed którą Policja wielokrotnie ostrzegała. Zazwyczaj sprawca posługuje się tym samym schematem. Dzwoni na",
+          "domain": "policja.pl",
+          "seeded": false
+        }
+      ],
+      "warning": "",
+      "relative_alert": "",
+      "safe_action": "",
+      "advice_source": "fallback"
+    },
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Good afternoon.",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "This is CBŚP police officer Kowalski calling about your savings.",
+        "t": 3.0
+      }
+    ]
+  },
+  "content": "{\"warning\": \"Someone claims to be a police officer asking about your savings—this could be a scam.\", \"relative_alert\": \"Alert them that the caller pretended to be a CBŚP police officer (impersonation of authority).\", \"safe_action\": \"Do not share any personal or financial details; hang up and call the official police number to verify.\"}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

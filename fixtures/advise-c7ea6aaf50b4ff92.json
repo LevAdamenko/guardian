@@ -1,0 +1,51 @@
+{
+  "request": {
+    "verdict": {
+      "level": "CAUTION",
+      "score": 3,
+      "signals": [
+        {
+          "tactic": "impersonation_family",
+          "quote": "it is your grandson",
+          "explanation": "Caller pretends to be a family member (grandson).",
+          "turn_index": 1
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://gryfino.policja.gov.pl/zgr/aktualnosci/prewencja/6200,Bezpieczny-senior-Policja-ostrzega-przed-oszustami-wykorzystujacymi-metode-quotn.html",
+          "title": "Bezpieczny senior. Policja ostrzega przed oszustami wykorzystującymi metodę \"na wnuczka\" - Komenda Powiatowa Policji w Gryfinie - Portal polskiej Policji",
+          "snippet": "Powrót \"Powrót\")\n\nDrukuj \"Drukuj\")\n\nBezpieczny senior to akcja policji mająca na celu chronić osoby starsze, przed próbami oszustw, wyłudzeń i kradzieży.Działania sprawców wskazują, że wykorzystują oni metodę, która w policyjnym sloganie określana jest metodą „na wnuczka”. Żeby ustrzec seniorów przed działaniem oszustów i wyczulić na ewentualne niepokojące sygnały w najbliższym i lokalnym środowisku warto zapoznać się ze sposobem działania sprawców. [...] Akcja bezpieczny senior ma m.in. pomóc uniknąć oszustw tzw. metodą na wnuczka. Jak się przed tymchronić?Przeczytaj porady policjantów.  \n   \n Przestępcy działający tą metodą bez skrupułów wykorzystują wiek seniorów i ich niejednokrotnie trudną sytuację materialną. Podszywając się pod członków rodziny, lekarzy, pracowników opieki społecznej, przedstawicieli gminy, urzędów i instytucji społecznych - najpierw wzbudzają zaufanie w seniorach, a następnie okradają ich lub ich mieszkania. [...] Czynów tych dopuszczają się młodzi ludzie, którzy wcześniej rozpoznają sytuacją rodzinną i materialną ofiary. W przestępstwach „na wnuczka” – przeważnie sprawcy dzwonią na telefon domowy seniorów przedstawiając się jako wnuk, wnuczka, siostrzeniec lub siostrzenica (głos w telefonie jest zniekształcony i starsi ludzie często myślą, iż dzwonią faktycznie osoby z rodziny). Tłumaczą „dziadkowi” lub „babci”, np. że spowodowali wypadek drogowy i potrzebują pieniędzy, żeby zapłacić pokrzywdzonym i",
+          "domain": "gryfino.policja.gov.pl",
+          "seeded": false
+        },
+        {
+          "url": "https://lubin.policja.gov.pl/dlu/aktualnosci/biezace-informacje/118941,Oszustwa-metoda-quotna-wnuczkaquot-Lubinska-Policja-ostrzega.html",
+          "title": "Oszustwa metodą \"na wnuczka\" - Lubińska Policja ostrzega",
+          "snippet": "Oszuści \"na wnuczka\" i \"na policjanta\" wciąż oszukują starsze osoby. Wyłudzają pieniądze od naszych babć, mam, cioć, dziadków, ojców i wujków.",
+          "domain": "lubin.policja.gov.pl",
+          "seeded": false
+        }
+      ],
+      "warning": "",
+      "relative_alert": "",
+      "safe_action": "",
+      "advice_source": "fallback"
+    },
+    "transcript": [
+      {
+        "speaker": "elder",
+        "text": "Hello darling.",
+        "t": 0.0
+      },
+      {
+        "speaker": "caller",
+        "text": "Hi Grandma, it is your grandson Adam. Are we still having Sunday dinner?",
+        "t": 4.0
+      }
+    ]
+  },
+  "content": "{\"warning\": \"Be careful, someone saying they're your grandson might not really be him.\", \"relative_alert\": \"Watch out for someone impersonating a family member to try to trick them.\", \"safe_action\": \"Ask the caller a question only your real grandson would know, or call him back on a number you have saved.\"}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "blik_friend_sms",
+    "title": "BLIK from a \"friend\"",
+    "expected": "scam",
+    "text": "Hi, it's Kasia. My card got blocked at the checkout and I need help urgently. Please send me the BLIK code from your banking app, I will pay you back tonight."
+  },
+  {
+    "id": "fake_delivery_sms",
+    "title": "Parcel \"extra fee\"",
+    "expected": "scam",
+    "text": "InPost: your parcel is on hold. Pay the 1.99 PLN delivery fee within 24 hours or it will be returned. Enter your card number and CVV at https://inpost-pl.delivery-fee.top"
+  },
+  {
+    "id": "bank_block_sms",
+    "title": "\"Bank\" account blocked",
+    "expected": "scam",
+    "text": "PKO Bank: we have blocked your account because of suspicious activity. Log in now with your login and password at https://pko-verify-account.com to unlock it, otherwise your money will be lost."
+  },
+  {
+    "id": "real_parcel_sms",
+    "title": "Real parcel notice",
+    "expected": "safe",
+    "text": "InPost: your parcel is waiting in locker KRA01M until Friday. Pickup code: 482915."
+  }
+]

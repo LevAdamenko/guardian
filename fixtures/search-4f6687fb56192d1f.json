@@ -1,0 +1,20 @@
+{
+  "request": {
+    "query": "site:cert.pl BLIK code scam warning",
+    "include_domains": [
+      "cbzc.policja.gov.pl",
+      "cert.pl",
+      "europol.europa.eu",
+      "gov.pl",
+      "knf.gov.pl",
+      "policja.pl",
+      "uokik.gov.pl",
+      "zbp.pl"
+    ],
+    "max_results": 5,
+    "search_depth": "basic"
+  },
+  "content": "{\"answer\":null,\"follow_up_questions\":null,\"images\":[],\"query\":\"BLIK code scam warning\",\"request_id\":\"c67aa9e8-7dff-4111-ab81-ba25c40e4b44\",\"response_time\":1.87,\"results\":[{\"content\":\"Sprawca, powołując się na nagłe problemy z obsługą konta bankowego, poprosił o wygenerowanie kodu BLIK w celu opłacenia rzekomych zakupów.\",\"id\":\"680b40-00\",\"raw_content\":null,\"score\":0.62000114,\"title\":\"Uwaga na oszustwa z użyciem kodu BLIK - AKTUALNOŚCI\",\"url\":\"https://tarnow.policja.gov.pl/kt/aktualnosci/61332,Uwaga-na-oszustwa-z-uzyciem-kodu-BLIK.html\"},{\"content\":\"Uważaj na oszustów! Bardzo popularną metodą ich działania jest prośba o wysłanie kodu BLIK, z konta znanej nam osoby, za pośrednictwem komunikatora.\",\"id\":\"ad555a-01\",\"raw_content\":null,\"score\":0.61695945,\"title\":\"Ktoś wysyła Ci prośbę o BLIK-a - nie daj się oszukać!\",\"url\":\"https://praga-polnoc.policja.gov.pl/r6/aktualnosci/145609,Ktos-wysyla-Ci-prosbe-o-BLIK-a-nie-daj-sie-oszukac.html\"},{\"content\":\"Przestępcy stosują różne scenariusze m.in. proszą o pieniądze na zakup leków, informują o rzekomym zagubieniu torebki lub portfela, awarii\",\"id\":\"cdf20a-02\",\"raw_content\":null,\"score\":0.5582553,\"title\":\"Oszustwo metodą na BLIK – policjanci ostrzegają\",\"url\":\"https://nisko.policja.gov.pl/rni/aktualnosci/wydarzenia/147106,Oszustwo-metoda-na-BLIK-policjanci-ostrzegaja.html\"},{\"content\":\"Oszuści coraz częściej próbują wyłudzić pieniądze, uzyskując od pokrzywdzonych kody BLIK. Wystarczy chwila nieuwagi, aby stracić oszczędności.\",\"id\":\"567a18-03\",\"raw_content\":null,\"score\":0.5573882,\"title\":\"nie podawaj kodów BLIK! - Wiadomości\",\"url\":\"https://gdynia.policja.gov.pl/m17/informacje/wiadomosci/147821,Policjanci-ostrzegaja-przed-oszustwami-nie-podawaj-kodow-BLIK.html\"},{\"content\":\"Z przestawionego profilu wysyła wiadomości do kontaktów z prośbą o pilne przelanie pieniędzy lub przesłanie kodu BLIK (sześciocyfrowy kod, który\",\"id\":\"d82b8f-04\",\"raw_content\":null,\"score\":0.34197846,\"title\":\"Znajomy prosi o BLIK? Sprawdź, zanim pomożesz.\",\"url\":\"https://swietochlowice.policja.gov.pl/k25/informacje/wiadomosci/425726,Znajomy-prosi-o-BLIK-Sprawdz-zanim-pomozesz.html\"}]}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}

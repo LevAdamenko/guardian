@@ -1,0 +1,14 @@
+{
+  "request": {
+    "transcript": [
+      {
+        "speaker": "caller",
+        "text": "PKO Bank: we have blocked your account because of suspicious activity. Log in now with your login and password at https://pko-verify-account.com to unlock it, otherwise your money will be lost.",
+        "t": 0.0
+      }
+    ]
+  },
+  "content": "{\"signals\": [{\"tactic\": \"impersonation_bank\", \"quote\": \"PKO Bank: we have blocked your account\", \"explanation\": \"Claims to represent a bank.\"}, {\"tactic\": \"urgency_pressure\", \"quote\": \"Log in now with your login and password at https://pko-verify-account.com to unlock it, otherwise your money will be lost.\", \"explanation\": \"Pressures immediate action under threat of losing money.\"}, {\"tactic\": \"credentials_request\", \"quote\": \"Log in now with your login and password\", \"explanation\": \"Requests login credentials.\"}]}",
+  "seeded": false,
+  "model": "nvidia/nemotron-3-super-120b-a12b"
+}
